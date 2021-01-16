@@ -1,0 +1,91 @@
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 28px 0;
+
+  @include mMax {
+    padding: 22px 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &_logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: auto;
+    color: #fff;
+    text-decoration: none;
+
+    @include mMax {
+      padding-right: 5px;
+    }
+
+    img {
+      display: block;
+      width: 31px;
+
+      @include mMax {
+        width: 22px;
+      }
+    }
+
+    span {
+      display: block;
+      margin-left: 8px;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 32px;
+      color: #fff;
+
+      @include mMax {
+        margin-left: 5px;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  &_login-btn {
+    display: inline-block;
+    width: 66px;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+
+    @include mMax {
+      width: 49px;
+      font-size: 13px;
+      line-height: 18px;
+    }
+  }
+
+  &_registration-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 164px;
+    height: 38px;
+    border: 1px solid #fc6652;
+    border-radius: 20px;
+    margin-right: 21px;
+
+    @include mMax {
+      height: 26px;
+      width: 107px;
+      margin-right: 10px;
+    }
+  }
+}
