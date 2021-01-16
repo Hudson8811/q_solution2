@@ -4,21 +4,6 @@
   padding: 200px 0 213px;
   height: 768px;
 
-  &-mobile_bg {
-    display: none;
-
-    @include mMax {
-      position: absolute;
-      display: block;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: calc(100% + 124px);
-      object-fit: cover;
-      object-position: center;
-    }
-  }
-
   @include mMax {
     height: auto;
     padding-top: 78px;
@@ -26,17 +11,26 @@
   }
 
   &-bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center bottom;
 
-    @include mMax {
-      display: none;
+      @include mMax {
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: calc(100% + 124px);
+        object-fit: cover;
+        object-position: center 64%;
+      }
     }
   }
 
@@ -44,7 +38,7 @@
     position: relative;
     z-index: 2;
     display: flex;
-    max-width: 1228px;
+    max-width: 1200px;
     justify-content: flex-start;
     align-items: stretch;
 
@@ -98,7 +92,7 @@
       }
     }
 
-    img {
+    & > img {
       position: absolute;
       display: block;
 
@@ -157,14 +151,19 @@
           right: 43px;
         }
       }
+    }
 
-      &:nth-child(4) {
+    picture {
+      img {
+        position: absolute;
+        display: block;
         left: -1.5vw;
         top: -5.5vw;
         width: 25.58vw;
         max-width: 393px;
         z-index: 2;
         filter: drop-shadow(0px 4px 50px rgba(252, 102, 82, 0.81));
+        transition: 0.5s;
 
         @include mMax {
           width: 42.13vw;
@@ -181,8 +180,8 @@
 
     &:hover {
       @include dMin {
-        img {
-          &:nth-child(4) {
+        picture {
+          img {
             top: -6.5vw;
             left: -2.5vw;
 
@@ -191,7 +190,8 @@
               left: -38px;
             }
           }
-
+        }
+        & > img {
           &:nth-child(3) {
             top: 3vw;
             right: 1.8vw;
@@ -220,7 +220,8 @@
     box-sizing: border-box;
     width: calc(100% - 31.96vw);
     padding-right: 51px;
-    min-width: 56%;
+    min-width: 60%;
+    max-width: 737px;
     margin-right: auto;
 
     h2 {
@@ -258,9 +259,16 @@
   }
 
   &-btns {
-    width: 50%;
+    width: calc(50% - 15px);
     box-sizing: border-box;
-    padding: 0 15px;
+
+    &:first-child {
+      margin-right: 30px;
+
+      @include mMax {
+        margin-right: 0;
+      }
+    }
 
     &_block {
       display: flex;
@@ -268,7 +276,7 @@
       align-items: flex-start;
       width: 100%;
       max-width: 585px;
-      margin: 120px -15px 0;
+      margin: 120px 0 0;
 
       @include mMax {
         position: absolute;
@@ -494,7 +502,7 @@
 
 .video_block {
   position: relative;
-  margin-top: 155px;
+  margin-top: 118px;
 
   @include mMax {
     margin-top: 15px;
@@ -598,7 +606,7 @@
     align-items: center;
 
     & + & {
-      margin-top: 27px;
+      margin-top: 20px;
 
       @include mMax {
         margin-top: 8px;
@@ -730,6 +738,11 @@
   &-banner {
     display: block;
     width: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+    }
   }
 
   &-play {
@@ -833,7 +846,7 @@
 
 .test_block {
   position: relative;
-  padding-top: 308px;
+  padding-top: 298px;
   padding-bottom: 65px;
   overflow: hidden;
 
@@ -1132,7 +1145,7 @@
 
 .situation_block {
   position: relative;
-  padding-top: 200px;
+  padding-top: 167px;
   padding-bottom: 199px;
 
   @include mMax {
@@ -1175,7 +1188,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 6px 19px 6px 32px;
+    padding: 9px 19px 9px 32px;
     width: calc(50% - 15px);
     margin-bottom: 32px;
     background: transparent;
@@ -1318,7 +1331,7 @@
 .evacuation_block {
   position: relative;
   z-index: 2;
-  margin-top: -80px;
+  margin-top: -97px;
 
   @include mMax {
     margin-top: -115px;
@@ -1365,8 +1378,8 @@
   &-content {
     position: relative;
     box-sizing: border-box;
-    width: 62.5%;
-    padding: 45px 31.5% 38px 34px;
+    width: 60%;
+    padding: 45px 27.5% 38px 34px;
 
     @include mMax {
       width: 100%;
@@ -1409,7 +1422,7 @@
     img {
       position: absolute;
       bottom: 0;
-      right: 25px;
+      right: 4px;
       display: block;
       width: 44%;
 
@@ -1427,11 +1440,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 37.5%;
+    width: 40%;
     border-radius: 0 20px 20px 0;
     overflow: hidden;
     background: #fc6652;
-    clip-path: polygon(15% 0%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(19% 0%, 100% 0, 100% 100%, 0% 100%);
 
     @include mMax {
       margin-top: -16px;
@@ -1513,9 +1526,9 @@
 .bottom_section {
   position: relative;
   z-index: 1;
-  margin-top: -140px;
+  margin-top: -106px;
   box-sizing: border-box;
-  padding-top: 410px;
+  padding-top: 349px;
   background: radial-gradient(39.55% 20.73% at 109.9% 70.38%, #771e12 0%, rgba(69, 43, 20, 0) 100%),
     radial-gradient(34.24% 11.01% at 47.69% 104.02%, #8a2e21 0%, rgba(69, 43, 20, 0) 100%),
     linear-gradient(180deg, #15161e 3.65%, #0c0d11 102.18%);
@@ -1584,7 +1597,7 @@
 }
 
 .metrix {
-  padding-bottom: 310px;
+  padding-bottom: 326px;
   padding-top: 160px;
   margin-top: -160px;
   overflow: hidden;
@@ -1595,7 +1608,7 @@
   }
 
   .container {
-    max-width: 1230px;
+    max-width: 1200px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1608,10 +1621,12 @@
   &-content {
     position: relative;
     width: calc(100% - 42.31vw);
-    min-width: 47%;
+    min-width: 49%;
+    margin-top: -50px;
     max-width: calc(100% - 650px);
 
     @include mMax {
+      margin-top: 96px;
       width: 100%;
       max-width: none;
 
@@ -1740,6 +1755,7 @@
     justify-content: center;
     align-items: center;
     max-width: 650px;
+    margin-top: 50px;
 
     @include dMax {
       max-height: 505px;
@@ -1768,7 +1784,7 @@
         filter: drop-shadow(0px 8.2659px 16.5318px rgba(114, 103, 103, 0.78));
         width: 18.61vw;
         top: -2vw;
-        right: 9vw;
+        right: 7vw;
         max-width: 286px;
 
         @include dMax {
@@ -1779,9 +1795,9 @@
 
       &3 {
         bottom: 0.5vw;
-        right: 6.5vw;
+        right: 2vw;
         filter: drop-shadow(0px 0px 14.9047px rgba(134, 111, 103, 0.51));
-        width: 18.03vw;
+        width: 21.03vw;
         max-width: 315px;
 
         @include dMax {
@@ -1907,7 +1923,7 @@
     box-sizing: border-box;
     width: calc(100% - 39vw);
     min-width: 48.75%;
-    padding-left: 55px;
+    padding-left: 15px;
 
     @include mMax {
       width: 100%;
@@ -2115,8 +2131,8 @@
 }
 
 .novelty {
-  padding-top: 163px;
-  padding-bottom: 200px;
+  padding-top: 38px;
+  padding-bottom: 228px;
   overflow: hidden;
 
   @include mMax {
@@ -2140,8 +2156,10 @@
     width: calc(100% - 33.33vw);
     min-width: 57.3%;
     min-height: 391px;
+    margin-top: 45px;
 
     @include mMax {
+      margin-top: 0;
       position: static;
       width: 100%;
       min-height: 1px;
@@ -2242,6 +2260,8 @@
     max-width: 512px;
     max-height: 630px;
     flex-shrink: 0;
+    margin-top: -45px;
+    margin-left: -33px;
 
     @include mMax {
       display: none;
@@ -2465,6 +2485,10 @@
         line-height: 24px;
         color: #171716;
 
+        b {
+          font-weight: 500;
+        }
+
         @include tMax {
           font-size: 13px;
           line-height: 18px;
@@ -2514,7 +2538,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 32px;
+        margin-bottom: 22px;
         width: 44px;
         height: 44px;
         background: #ffffff;
@@ -2539,7 +2563,7 @@
         line-height: 32px;
         text-align: center;
         color: #ffffff;
-        margin-bottom: 48px;
+        margin-bottom: 38px;
 
         @include tMax {
           margin-bottom: 40px;
@@ -2559,11 +2583,21 @@
         text-align: center;
         color: #ffffff;
 
+        b {
+          font-weight: 500;
+        }
+
         @include tMax {
           font-size: 13px;
           line-height: 18px;
           text-align: left;
           margin-bottom: 16px;
+        }
+
+        @include mMax {
+          br {
+            display: none;
+          }
         }
       }
     }
