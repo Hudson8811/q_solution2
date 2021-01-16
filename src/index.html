@@ -6,14 +6,10 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="css/main.css">
-
-    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/Montserrat-Italic.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/Montserrat-Black.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/Raleway-Black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" as="style">
+    <link href="css/main.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -51,22 +47,10 @@
               </div>
             </div>
             <a href="#" class="main_section-banner">
-              <picture class="revealator-fade revealator-once revealator-delay1">
-                <source media="(max-width: 768px)" srcset="img/mac1-mobile.png">
-                <source media="(min-width: 769px)" srcset="img/mac1.png">
-                <img src="img/mac1.png" alt="">
-              </picture>
-              <picture class="revealator-fade revealator-once revealator-delay4">
-                <source media="(max-width: 768px)" srcset="img/mac2-mobile.png">
-                <source media="(min-width: 769px)" srcset="img/mac2.png">
-                <img src="img/mac2.png" alt="">
-              </picture>
+              <img class="revealator-fade revealator-once revealator-delay1" src="img/mac1.png" alt="">
+              <img class="revealator-fade revealator-once revealator-delay4" src="img/mac2.png" alt="">
               <img class="revealator-fade revealator-once revealator-delay3" src="img/mac3.png" alt="">
-              <picture class="revealator-fade revealator-once revealator-delay2">
-                <source media="(max-width: 768px)" srcset="img/mac4-mobile.png">
-                <source media="(min-width: 769px)" srcset="img/mac4.png">
-                <img src="img/mac4.png" alt="">
-              </picture>
+              <img class="revealator-fade revealator-once revealator-delay2" src="img/mac4.png" alt="">
             </a>
           </div>
 
@@ -170,11 +154,7 @@
                   </div>
                 </div>
                 <div class="test_block-images_content">
-                  <picture>
-                    <source media="(max-width: 768px)" srcset="img/test-img-mobile.png">
-                    <source media="(min-width: 769px)" srcset="img/test-img.png">
-                    <img src="img/test-img.png" alt="">
-                  </picture>
+                  <img src="img/test-img.png" alt="">
                   <img src="img/arrow1.svg" alt="" class="test_block-images_arrow test_block-images_arrow-1 revealator-slideleft revealator-once revealator-delay1">
                   <img src="img/arrow2.svg" alt="" class="test_block-images_arrow test_block-images_arrow-2 revealator-slideright revealator-once revealator-delay1">
                 </div>
@@ -236,11 +216,7 @@
               <div class="evacuation_block-content">
                 <h2>Без паники!</h2>
                 <p>У нас есть план эвакуации из любой проблемной ситуации.</p>
-                <picture>
-                  <source media="(max-width: 768px)" srcset="img/man-mobile.png">
-                  <source media="(min-width: 769px)" srcset="img/man.png">
-                  <img src="img/man.png" alt="">
-                </picture>
+                <img src="img/man.png" alt="">
               </div>
               <div class="evacuation_block-more">
                 <img src="img/number3.png" alt="" class="evacuation_block-number">
