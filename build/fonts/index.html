@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Raleway:wght@900&display=swap" as="fetch" crossorigin="anonymous">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400&amp;display=swap|Raleway:wght@900&amp;display=swap" as="fetch" crossorigin="anonymous">
     <script type="text/javascript">
-!function(e,n,t){"use strict";var o="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Raleway:wght@900&display=swap",r="__3perf_googleFonts_71aee";function c(e){(n.head||n.body).appendChild(e)}function a(){var e=n.createElement("link");e.href=o,e.rel="stylesheet",c(e)}function f(e){if(!n.getElementById(r)){var t=n.createElement("style");t.id=r,c(t)}n.getElementById(r).innerHTML=e}e.FontFace&&e.FontFace.prototype.hasOwnProperty("display")?(t[r]&&f(t[r]),fetch(o).then(function(e){return e.text()}).then(function(e){return e.replace(/@font-face {/g,"@font-face{font-display:swap;")}).then(function(e){return t[r]=e}).then(f).catch(a)):a()}(window,document,localStorage);
+!function(e,n,t){"use strict";var o="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400&display=swap|Raleway:wght@900&display=swap",r="__3perf_googleFonts_71aee";function c(e){(n.head||n.body).appendChild(e)}function a(){var e=n.createElement("link");e.href=o,e.rel="stylesheet",c(e)}function f(e){if(!n.getElementById(r)){var t=n.createElement("style");t.id=r,c(t)}n.getElementById(r).innerHTML=e}e.FontFace&&e.FontFace.prototype.hasOwnProperty("display")?(t[r]&&f(t[r]),fetch(o).then(function(e){return e.text()}).then(function(e){return e.replace(/@font-face {/g,"@font-face{font-display:swap;")}).then(function(e){return t[r]=e}).then(f).catch(a)):a()}(window,document,localStorage);
 </script><style id="__3perf_googleFonts_71aee">/* cyrillic-ext */
 @font-face{font-display:swap;
   font-family: 'Montserrat';
@@ -107,7 +107,6 @@
   src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_ZpC3g3D_vx3rCubqg.woff2) format('woff2');
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
-
 /* vietnamese */
 @font-face{font-display:swap;
   font-family: 'Montserrat';
@@ -259,7 +258,18 @@
   <body>
     <div class="wrapper">
       <!-- HEADER -->
-      //= common/header
+      
+      <header class="header">
+          <div class="container">
+              <a href="#" class="header_logo">
+                  <img src="img/logo.svg" alt="">
+                  <span>Solutions</span>
+              </a>
+      
+              <a href="#" class="header_login-btn header_registration-btn">Регистрация</a>
+              <a href="#" class="header_login-btn">Вход</a>
+          </div>
+      </header>
       <!-- HEADER-END -->
 
       <main class="main">
@@ -670,7 +680,50 @@
           <!-- HOW_BLOCK-END -->
 
           <!-- FOOTER -->
-          //= common/footer
+          <footer class="footer">
+              <div class="container">
+                  <div class="footer-line"></div>
+                  <div class="footer-text">
+                      <a href="#">Политика конфиденциальности</a>
+                      <a href="#">Пользовательское соглашение</a>
+                      <a href="#">Copyright 2020 Q solutions</a>
+                      <a href="tel:+79999999999"><span>Добрышин Антон</span>+7 (999) 999 99 99</a>
+                  </div>
+          
+                  <ul class="footer-soc">
+                      <li>
+                          <a href="#">
+                              <img src="img/soc1.svg" alt="">
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <img src="img/soc2.svg" alt="">
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <img src="img/soc3.svg" alt="">
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <img src="img/soc4.svg" alt="">
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <img src="img/soc5.svg" alt="">
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <img src="img/soc6.svg" alt="">
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </footer>
           <!-- FOOTER-END -->
         </div>
         <!-- BOTTOM_SECTION-END -->
