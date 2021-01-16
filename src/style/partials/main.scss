@@ -427,10 +427,6 @@
   margin: 0 auto;
   overflow: hidden;
 
-  @include dMax {
-    padding-top: 7.22vw;
-  }
-
   @include mMax {
     padding-top: 29.6vw;
   }
