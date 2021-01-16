@@ -35,6 +35,11 @@
     object-fit: cover;
     object-position: center;
 
+    @include dMax {
+      object-position: bottom;
+      height: calc(100% + 16.7vw);
+    }
+
     @include mMax {
       display: none;
     }
