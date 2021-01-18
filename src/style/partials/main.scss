@@ -6,8 +6,8 @@
 
   @include mMax {
     height: auto;
-    padding-top: 78px;
-    padding-bottom: 122px;
+    padding-top: 20.8vw;
+    padding-bottom: 32.53vw;
   }
 
   &-bg {
@@ -40,9 +40,8 @@
       left: 0;
       top: 0;
       width: 100%;
-      height: calc(100% + 124px);
       object-fit: cover;
-      object-position: center 64%;
+      object-position: center bottom;
     }
   }
 
@@ -81,7 +80,7 @@
       max-height: none;
       max-width: none;
       margin: 0 auto;
-      padding: 24px 0 54px;
+      padding: 6.4vw 0 14.4vw;
 
       &:after {
         content: '';
@@ -260,14 +259,14 @@
 
       h2 {
         text-align: center;
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 4.8vw;
+        line-height: 6.4vw;
       }
 
       p {
         text-align: center;
-        font-size: 13px;
-        line-height: 18px;
+        font-size: 3.46vw;
+        line-height: 4.8vw;
       }
     }
   }
@@ -320,20 +319,20 @@
       }
 
       .start-btn {
-        height: 56px;
-        max-width: 284px;
+        height: 14.93vw;
+        max-width: 75.73vw;
         margin: 0 auto;
         font-weight: normal;
-        font-size: 16px;
-        line-height: 22px;
-        padding-left: 59px;
-        padding-right: 36px;
+        font-size: 4.26vw;
+        line-height: 5.86vw;
+        padding-left: 15.73vw;
+        padding-right: 9.6vw;
       }
 
       p {
-        margin-top: 11px;
-        font-size: 13px;
-        line-height: 18px;
+        margin-top: 2.93vw;
+        font-size: 3.46vw;
+        line-height: 4.8vw;
       }
     }
   }
@@ -351,11 +350,11 @@
     margin-bottom: -49px;
 
     @include mMax {
-      bottom: -32px;
-      width: 62px;
-      height: 70px;
-      margin-left: -31px;
-      margin-bottom: -35px;
+      bottom: -0.53vw;
+      width: 16.53vw;
+      height: 17.66vw;
+      margin-left: -8.26vw;
+      margin-bottom: -9.33vw;
     }
 
     &:before {
@@ -369,7 +368,7 @@
       background: center / cover url(../img/border.svg) no-repeat;
 
       @include mMax {
-        height: 30px;
+        height: 8vw;
         background: center / cover url(../img/border-mobile.svg) no-repeat;
       }
     }
@@ -385,9 +384,9 @@
       background-color: #fff;
 
       @include mMax {
-        top: 4px;
-        width: 48px;
-        height: 74px;
+        top: 1.06vw;
+        width: 12.8vw;
+        height: 19.73vw;
       }
     }
 
@@ -405,8 +404,8 @@
       border-radius: 60px;
 
       @include mMax {
-        width: 40px;
-        height: 58px;
+        width: 10.66vw;
+        height: 15.46vw;
       }
 
       img {
@@ -472,8 +471,8 @@
 
     @include mMax {
       margin-top: 0;
-      font-size: 20px;
-      line-height: 20px;
+      font-size: 5.33vw;
+      line-height: 5.33vw;
     }
 
     b {
@@ -488,8 +487,9 @@
       line-height: 48px;
 
       @include mMax {
-        font-size: 20px;
-        line-height: 20px;
+        margin-top: -1.56vw;
+        font-size: 5.33vw;
+        line-height: 5.33vw;
       }
 
       &:before {
@@ -515,7 +515,7 @@
   margin-top: 118px;
 
   @include mMax {
-    margin-top: 15px;
+    margin-top: 4vw;
   }
 
   &-figur {
@@ -554,9 +554,9 @@
     margin-bottom: 39px;
 
     @include mMax {
-      margin-bottom: 7px;
-      font-size: 18px;
-      line-height: 24px;
+      margin-bottom: 1.86vw;
+      font-size: 4.8vw;
+      line-height: 6.4vw;
     }
   }
 
@@ -577,7 +577,7 @@
 
     @include mMax {
       width: 100%;
-      margin-bottom: 15px;
+      margin-bottom: 4vw;
     }
   }
 
@@ -589,7 +589,6 @@
 
     @include mMax {
       width: 100%;
-
       padding-left: 0;
     }
   }
@@ -604,7 +603,7 @@
     @include mMax {
       top: 0;
       right: 0;
-      width: 188px;
+      width: 50.1vw;
     }
   }
 
@@ -619,7 +618,7 @@
       margin-top: 20px;
 
       @include mMax {
-        margin-top: 8px;
+        margin-top: 2.13vw;
       }
     }
 
@@ -635,7 +634,7 @@
       box-shadow: 0px 30px 30px rgba(109, 94, 88, 0.25);
 
       @include mMax {
-        width: 108px;
+        width: 28.8vw;
       }
 
       img {
@@ -646,7 +645,7 @@
           position: absolute;
 
           @include mMax {
-            width: 18px;
+            width: 4.8vw;
           }
         }
       }
@@ -669,10 +668,10 @@
         color: #ffffff;
 
         @include mMax {
-          width: 42px;
-          height: 13px;
-          font-size: 7px;
-          line-height: 14px;
+          width: 11.2vw;
+          height: 3.46vw;
+          font-size: 1.86vw;
+          line-height: 3.73vw;
         }
       }
     }
@@ -687,9 +686,9 @@
       color: #494947;
 
       @include tMax {
-        font-size: 16px;
-        line-height: 22px;
-        margin-left: 10px;
+        font-size: 4.26vw;
+        line-height: 5.86vw;
+        margin-left: 2.66vw;
       }
     }
   }
@@ -701,7 +700,7 @@
     margin-top: 25px;
 
     @include mMax {
-      margin-top: 15px;
+      margin-top: 4vw;
     }
 
     svg {
@@ -709,7 +708,7 @@
       flex-shrink: 0;
 
       @include mMax {
-        width: 32px;
+        width: 8.53vw;
       }
     }
 
@@ -727,9 +726,9 @@
       }
 
       @include tMax {
-        font-size: 16px;
-        line-height: 22px;
-        margin-left: 19px;
+        font-size: 4.26vw;
+        line-height: 5.86vw;
+        margin-left: 5.06vw;
       }
     }
 
@@ -774,7 +773,7 @@
       transition: 0.2s;
 
       @include mMax {
-        width: 112px;
+        width: 29.86vw;
       }
     }
 
@@ -785,9 +784,9 @@
 
       @include mMax {
         font-weight: 400;
-        font-size: 13px;
-        line-height: 18px;
-        margin-left: -13px;
+        font-size: 3.46vw;
+        line-height: 4.8vw;
+        margin-left: -3.46vw;
       }
     }
 
@@ -824,17 +823,17 @@
     }
 
     @include mMax {
-      padding: 9px 11px 8px;
+      padding: 2.4vw 2.93vw 2.13vw;
       border-radius: 0 0 10px 10px;
 
       img {
-        width: 29px;
+        width: 7.73vw;
       }
 
       span {
-        font-size: 13px;
-        line-height: 18px;
-        margin-left: 20px;
+        font-size: 3.46vw;
+        line-height: 4.8vw;
+        margin-left: 5.33vw;
       }
     }
   }
@@ -860,8 +859,8 @@
   padding-bottom: 65px;
 
   @include mMax {
-    padding-top: 80px;
-    padding-bottom: 55px;
+    padding-top: 21.33vw;
+    padding-bottom: 14.66vw;
   }
 
   .container {
@@ -871,7 +870,7 @@
 
     @include mMax {
       flex-direction: column;
-      padding-bottom: 100px;
+      padding-bottom: 26.66vw;
     }
   }
   &-images {
@@ -892,15 +891,15 @@
       margin-left: -42px;
 
       @include mMax {
-        width: 24px;
-        margin-left: -20px;
+        width: 6.4vw;
+        margin-left: -5.33vw;
       }
 
       &-1 {
         margin-top: -26px;
 
         @include mMax {
-          margin-top: -13px;
+          margin-top: -3.46vw;
         }
       }
     }
@@ -918,16 +917,16 @@
       border-radius: 35px;
 
       @include mMax {
-        width: 247px;
-        height: 191px;
+        width: 65.86vw;
+        height: 50.93vw;
         opacity: 0.1;
-        border: 1px solid #fc6652;
+        border: 0.27vw solid #fc6652;
         left: 50%;
         top: 50%;
-        margin-left: -123px;
-        margin-top: -82px;
+        margin-left: -32.8vw;
+        margin-top: -25vw;
         box-sizing: border-box;
-        border-radius: 11px;
+        border-radius: 2.93vw;
       }
     }
 
@@ -947,9 +946,9 @@
         color: #555555;
 
         @include mMax {
-          max-width: 125px;
-          font-size: 13px;
-          line-height: 17px;
+          max-width: 33.33vw;
+          font-size: 3.46vw;
+          line-height: 4.53vw;
         }
       }
     }
@@ -972,15 +971,15 @@
       }
 
       @include mMax {
-        max-width: 160px;
+        max-width: 42.66vw;
 
         img {
-          width: 16px;
+          width: 4.26vw;
         }
 
         span {
-          font-size: 13px;
-          line-height: 17px;
+          font-size: 3.46vw;
+          line-height: 4.53vw;
         }
       }
     }
@@ -994,8 +993,8 @@
         margin: 0 -34px;
 
         @include mMax {
-          margin: 0 -15px;
-          width: calc(100% + 30px);
+          margin: 0 -4vw;
+          width: calc(100% + 8vw);
         }
       }
     }
@@ -1026,9 +1025,9 @@
       color: #494947;
 
       @include mMax {
-        font-size: 18px;
-        line-height: 24px;
-        margin-bottom: 16px;
+        font-size: 4.8vw;
+        line-height: 6.4vw;
+        margin-bottom: 4.26vw;
       }
     }
 
@@ -1043,9 +1042,9 @@
       color: #555555;
 
       @include mMax {
-        font-size: 13px;
-        line-height: 18px;
-        margin-bottom: 16px;
+        font-size: 3.46vw;
+        line-height: 4.8vw;
+        margin-bottom: 4.26vw;
       }
     }
 
@@ -1099,18 +1098,18 @@
       }
 
       @include mMax {
-        height: 56px;
-        max-width: 245px;
-        font-size: 18px;
-        line-height: 24px;
-        padding-left: 34px;
-        padding-right: 26px;
+        height: 14.93vw;
+        max-width: 65.33vw;
+        font-size: 4.8vw;
+        line-height: 6.4vw;
+        padding-left: 9.06vw;
+        padding-right: 6.93vw;
         left: 50%;
         transform: translateX(-50%);
 
         b {
-          height: 25px;
-          width: 36px;
+          height: 6.66vw;
+          width: 9.6vw;
         }
       }
 
@@ -1129,10 +1128,10 @@
     z-index: 0;
 
     @include mMax {
-      top: -26px;
-      right: -10px;
+      top: -6.93vw;
+      right: -2.66vw;
       left: auto;
-      width: 225px;
+      width: 60vw;
     }
   }
 
@@ -1164,8 +1163,8 @@
   }
 
   @include mMax {
-    padding-top: 55px;
-    padding-bottom: 180px;
+    padding-top: 14.66vw;
+    padding-bottom: 48vw;
   }
 
   h2 {
@@ -1183,9 +1182,9 @@
     }
 
     @include mMax {
-      margin-bottom: 24px;
-      font-size: 18px;
-      line-height: 24px;
+      margin-bottom: 6.4vw;
+      font-size: 4.8vw;
+      line-height: 6.4vw;
     }
   }
 
@@ -1202,7 +1201,7 @@
 
     @include mMax {
       display: block;
-      margin-bottom: -12px;
+      margin-bottom: -3.2vw;
     }
   }
 
@@ -1231,8 +1230,8 @@
 
     @include mMax {
       width: 100%;
-      padding: 3px 13px 3px 18px;
-      margin-bottom: 12px;
+      padding: 0.8vw 3.46vw 0.8vw 4.8vw;
+      margin-bottom: 3.2vw;
       background: right bottom / auto 100% url(../img/mobile-figur-bg.png) no-repeat;
     }
 
@@ -1260,9 +1259,9 @@
       }
 
       @include mMax {
-        max-width: 162px;
-        font-size: 13px;
-        line-height: 18px;
+        max-width: 43.2vw;
+        font-size: 3.46vw;
+        line-height: 4.8vw;
         margin-right: auto;
       }
     }
@@ -1283,9 +1282,9 @@
       }
 
       @include mMax {
-        width: 41px;
-        height: 7px;
-        border-radius: 0px 0px 11px 11px;
+        width: 10.93vw;
+        height: 1.86vw;
+        border-radius: 0px 0px 2.93vw 2.93vw;
       }
     }
 
@@ -1421,7 +1420,7 @@
   margin-top: -97px;
 
   @include mMax {
-    margin-top: -115px;
+    margin-top: -20.66vw;
   }
 
   &-wrap {
@@ -1432,7 +1431,7 @@
     min-height: 232px;
 
     @include mMax {
-      height: 304px;
+      height: 81.06vw;
       display: block;
     }
     &:before {
@@ -1457,7 +1456,7 @@
         width: 100%;
         background: linear-gradient(149.9deg, #1a1b22 6.07%, #181b27 63.71%), #fafafa;
         box-shadow: 0px 10px 20px rgba(55, 46, 43, 0.16);
-        border-radius: 20px;
+        border-radius: 5.33vw;
       }
     }
   }
@@ -1470,7 +1469,7 @@
 
     @include mMax {
       width: 100%;
-      padding: 20px 16px;
+      padding: 5.33vw 4.26vw;
       padding-bottom: 0;
     }
 
@@ -1484,9 +1483,9 @@
       color: #ffffff;
 
       @include mMax {
-        font-size: 18px;
-        line-height: 24px;
-        margin-bottom: 8px;
+        font-size: 4.8vw;
+        line-height: 6.4vw;
+        margin-bottom: 2.13vw;
       }
     }
 
@@ -1500,9 +1499,9 @@
       @include mMax {
         position: relative;
         z-index: 2;
-        font-size: 13px;
-        line-height: 18px;
-        max-width: 150px;
+        font-size: 3.46vw;
+        line-height: 4.8vw;
+        max-width: 40vw;
       }
     }
 
@@ -1515,8 +1514,8 @@
 
       @include mMax {
         bottom: auto;
-        top: -38px;
-        width: 160px;
+        top: -8.13vw;
+        width: 42.66vw;
         filter: drop-shadow(0px -5px 8.81218px rgba(244, 97, 77, 0.3));
       }
     }
@@ -1534,10 +1533,10 @@
     clip-path: polygon(19% 0%, 100% 0, 100% 100%, 0% 100%);
 
     @include mMax {
-      margin-top: -16px;
+      margin-top: -4.26vw;
       width: 100%;
-      height: calc(100% - 90px);
-      border-radius: 0 0 20px 20px;
+      height: calc(100% - 24vw);
+      border-radius: 0 0 5.33vw 5.33vw;
       clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
     }
   }
@@ -1547,9 +1546,9 @@
     right: 5px;
 
     @include mMax {
-      width: 255px;
-      right: -15px;
-      bottom: -5px;
+      width: 68vw;
+      right: -4vw;
+      bottom: -1.33vw;
     }
   }
 
@@ -1568,10 +1567,6 @@
     text-decoration: none;
     transition: 0.2s;
 
-    @media screen and (max-width: 1100px) and (min-width: 769px) {
-      width: 70%;
-    }
-
     span {
       display: block;
       max-width: 98%;
@@ -1584,21 +1579,21 @@
     }
 
     @include mMax {
-      min-height: 56px;
-      max-width: calc(100% - 50px);
-      width: 296px;
+      min-height: 14.93vw;
+      max-width: calc(100% - 13.33vw);
+      width: 78.93vw;
       margin: 0 auto;
-      padding-left: 25px;
-      padding-right: 18px;
-      margin-top: 34px;
+      padding-left: 6.66vw;
+      padding-right: 4.8vw;
+      margin-top: 9.06vw;
 
       span {
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 4.8vw;
+        line-height: 6.4vw;
       }
 
       img {
-        width: 32px;
+        width: 8.53vw;
       }
     }
 
@@ -1621,7 +1616,8 @@
     linear-gradient(180deg, #15161e 3.65%, #0c0d11 102.18%);
 
   @include mMax {
-    margin-top: -180px;
+    margin-top: -48vw;
+    padding-top: 93.06vw;
     background: radial-gradient(42.4% 5.83% at 106.8% 67.93%, #771e12 0%, rgba(69, 43, 20, 0) 100%),
       radial-gradient(38.64% 3.26% at 47.69% 100.69%, #8a2e21 0%, rgba(69, 43, 20, 0) 100%),
       linear-gradient(180deg, #15161e 0.96%, #0c0d11 26.82%);
@@ -1700,7 +1696,7 @@
   overflow: hidden;
 
   @include mMax {
-    padding-bottom: 117px;
+    padding-bottom: 31.2vw;
     padding-top: 0;
   }
 
@@ -1723,12 +1719,12 @@
     max-width: calc(100% - 650px);
 
     @include mMax {
-      margin-top: 96px;
+      margin-top: 25.6vw;
       width: 100%;
       max-width: none;
 
       .metrix-content_btn {
-        margin-top: 20px;
+        margin-top: 5.33vw;
       }
     }
 
@@ -1746,9 +1742,9 @@
       margin-bottom: 38px;
 
       @include mMax {
-        font-size: 18px;
-        line-height: 24px;
-        margin-bottom: 16px;
+        font-size: 4.8vw;
+        line-height: 6.4vw;
+        margin-bottom: 4.26vw;
       }
     }
 
@@ -1760,15 +1756,15 @@
       color: #c4c4c4;
 
       @include mMax {
-        font-size: 13px;
-        line-height: 18px;
+        font-size: 3.46vw;
+        line-height: 4.8vw;
       }
 
       & + p {
         margin-top: 16px;
 
         @include mMax {
-          margin-top: 8px;
+          margin-top: 2.13vw;
         }
       }
     }
@@ -1796,15 +1792,15 @@
 
       @include mMax {
         position: relative;
-        min-height: 56px;
-        max-width: 245px;
+        min-height: 14.93vw;
+        max-width: 65.33vw;
         margin: 0 auto;
-        font-size: 18px;
-        line-height: 24px;
-        padding-left: 25px;
-        padding-right: 22px;
+        font-size: 4.8vw;
+        line-height: 6.4vw;
+        padding-left: 6.66vw;
+        padding-right: 5.86vw;
         img {
-          width: 22px;
+          width: 5.86vw;
         }
       }
 
@@ -1947,7 +1943,7 @@
   padding-bottom: 124px;
 
   @include mMax {
-    padding-bottom: 40px;
+    padding-bottom: 10.66vw;
   }
 
   &-mobile_mac {
@@ -1959,7 +1955,7 @@
       img {
         display: block;
         width: 100%;
-        margin-left: -16px;
+        margin-left: -4.26vw;
       }
     }
   }
@@ -1985,9 +1981,9 @@
     margin-bottom: 47px;
 
     @include mMax {
-      font-size: 32px;
-      line-height: 32px;
-      margin-bottom: 18px;
+      font-size: 8.53vw;
+      line-height: 8.53vw;
+      margin-bottom: 4.8vw;
     }
 
     span {
@@ -2007,10 +2003,10 @@
       background: center / cover url(../img/ex-bef.svg) no-repeat;
 
       @include mMax {
-        width: 56px;
-        height: 50px;
-        bottom: 15px;
-        left: -10px;
+        width: 14.93vw;
+        height: 13.33vw;
+        bottom: 4vw;
+        left: -1.66vw;
       }
     }
   }
@@ -2036,9 +2032,9 @@
       color: #ffffff;
 
       @include mMax {
-        font-size: 18px;
-        line-height: 24px;
-        margin-bottom: 16px;
+        font-size: 4.8vw;
+        line-height: 6.4vw;
+        margin-bottom: 4.26vw;
       }
     }
 
@@ -2053,13 +2049,13 @@
         margin-top: 16px;
 
         @include mMax {
-          margin-top: 8px;
+          margin-top: 2.13vw;
         }
       }
 
       @include mMax {
-        font-size: 13px;
-        line-height: 18px;
+        font-size: 3.46vw;
+        line-height: 4.8vw;
       }
     }
 
@@ -2067,8 +2063,8 @@
       min-height: 94px;
 
       @include mMax {
-        margin-top: -15px;
-        min-height: 56px;
+        margin-top: -4vw;
+        min-height: 14.93vw;
         width: 100%;
       }
     }
@@ -2081,16 +2077,16 @@
 
       @include mMax {
         position: relative;
-        min-height: 56px;
-        padding-left: 40px;
-        padding-right: 27px;
-        max-width: 343px;
+        min-height: 14.93vw;
+        padding-left: 10.66vw;
+        padding-right: 7.2vw;
+        max-width: 91.46vw;
         margin: 0 auto;
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 4.8vw;
+        line-height: 6.4vw;
 
         img {
-          width: 34px;
+          width: 9.06vw;
         }
       }
 
@@ -2134,9 +2130,9 @@
     max-width: 100%;
 
     @include mMax {
-      width: 255px;
+      width: 68vw;
       right: 0;
-      top: 106px;
+      top: 28.26vw;
     }
   }
 
@@ -2234,8 +2230,8 @@
   overflow: hidden;
 
   @include mMax {
-    padding-top: 40px;
-    padding-bottom: 80px;
+    padding-top: 10.66vw;
+    padding-bottom: 21.33vw;
   }
 
   .container {
@@ -2245,7 +2241,7 @@
 
     @include mMax {
       display: block;
-      padding-bottom: 88px;
+      padding-bottom: 23.46vw;
     }
   }
 
@@ -2277,9 +2273,9 @@
       color: #ffffff;
 
       @include mMax {
-        font-size: 18px;
-        line-height: 24px;
-        margin-bottom: 8px;
+        font-size: 4.8vw;
+        line-height: 6.4vw;
+        margin-bottom: 2.13vw;
       }
     }
 
@@ -2291,8 +2287,8 @@
       color: #ffffff;
 
       @include mMax {
-        font-size: 13px;
-        line-height: 18px;
+        font-size: 3.46vw;
+        line-height: 4.8vw;
         color: #c4c4c4;
 
         br {
@@ -2306,7 +2302,7 @@
 
       @include mMax {
         width: 100%;
-        height: 56px;
+        height: 14.93vw;
       }
     }
 
@@ -2318,17 +2314,17 @@
       box-shadow: 0px 15px 22px rgba(252, 102, 82, 0.22);
 
       @include mMax {
-        min-height: 56px;
-        max-width: 245px;
+        min-height: 14.93vw;
+        max-width: 65.33vw;
         margin: 0 auto;
-        font-size: 18px;
-        line-height: 24px;
-        padding-left: 38px;
-        padding-right: 34px;
+        font-size: 4.8vw;
+        line-height: 6.4vw;
+        padding-left: 10.13vw;
+        padding-right: 9.06vw;
 
         img {
           display: block;
-          width: 26px;
+          width: 6.93vw;
         }
       }
 
@@ -2347,7 +2343,7 @@
     @include mMax {
       display: block;
       width: 100%;
-      padding: 34px 0 32px;
+      padding: 9.06vw 0 8.53vw;
     }
   }
 
@@ -2427,10 +2423,10 @@
     text-shadow: 0px 4px 50px rgba(252, 102, 82, 0.53);
 
     @include mMax {
-      margin-bottom: 16px;
-      font-size: 32px;
-      line-height: 32px;
-      padding-left: 34px;
+      margin-bottom: 4.26vw;
+      font-size: 8.53vw;
+      line-height: 8.53vw;
+      padding-left: 9.06vw;
     }
 
     &:before {
@@ -2444,9 +2440,9 @@
       background: linear-gradient(to right, #fc665200 0%, #fc6652 100%);
 
       @include mMax {
-        width: 50px;
-        height: 3px;
-        right: calc(100% - 26px);
+        width: 13.33vw;
+        height: 0.8vw;
+        right: calc(100% - 6.93vw);
       }
     }
   }
@@ -2458,9 +2454,9 @@
     max-width: 100%;
 
     @include mMax {
-      width: 255px;
+      width: 68vw;
       right: 0;
-      top: 80px;
+      top: 21.33vw;
     }
   }
 }
@@ -2468,8 +2464,8 @@
 .how_block {
   padding-bottom: 79px;
 
-  @include tMax {
-    padding-bottom: 32px;
+  @include mMax {
+    padding-bottom: 8.53vw;
   }
 
   h2 {
@@ -2480,10 +2476,10 @@
     line-height: 48px;
     color: #ffffff;
 
-    @include tMax {
-      font-size: 24px;
-      line-height: 32px;
-      margin-bottom: 32px;
+    @include mMax {
+      font-size: 6.4vw;
+      line-height: 8.53vw;
+      margin-bottom: 8.53vw;
     }
   }
   &-flex {
@@ -2491,7 +2487,7 @@
     justify-content: flex-start;
     align-items: stretch;
 
-    @include tMax {
+    @include mMax {
       display: block;
     }
   }
@@ -2503,12 +2499,12 @@
     box-sizing: border-box;
     padding: 41px 0 24px;
 
-    @include tMax {
+    @include mMax {
       padding: 0;
       width: 100%;
 
       & + & {
-        margin-top: 16px;
+        margin-top: 4.26vw;
       }
     }
 
@@ -2531,8 +2527,8 @@
       height: 100%;
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 
-      @include tMax {
-        padding: 13px 15px 18px 11px;
+      @include mMax {
+        padding: 3.46vw 4vw 5.6vw;
       }
 
       span {
@@ -2549,12 +2545,12 @@
         color: #ffffff;
         background: #fc6652;
 
-        @include tMax {
+        @include mMax {
           position: absolute;
           top: 0;
           left: 0;
-          width: 49px;
-          height: 47px;
+          width: 13.06vw;
+          height: 12.53vw;
           margin-left: 0;
         }
       }
@@ -2566,11 +2562,11 @@
         line-height: 32px;
         color: #494947;
 
-        @include tMax {
-          font-size: 16px;
-          line-height: 22px;
-          margin-bottom: 39px;
-          padding-left: 59px;
+        @include mMax {
+          font-size: 4.26vw;
+          line-height: 5.86vw;
+          margin-bottom: 10.4vw;
+          padding-left: 15.73vw;
         }
       }
 
@@ -2587,17 +2583,17 @@
           font-weight: 500;
         }
 
-        @include tMax {
-          font-size: 13px;
-          line-height: 18px;
-          padding-left: 21px;
+        @include mMax {
+          font-size: 3.46vw;
+          line-height: 4.8vw;
+          padding-left: 5.6vw;
         }
 
         & + p {
           margin-top: 40px;
 
-          @include tMax {
-            margin-top: 16px;
+          @include mMax {
+            margin-top: 4.26vw;
           }
         }
 
@@ -2613,8 +2609,8 @@
           height: 15px;
           background: center / auto url(../img/how_play.svg) no-repeat;
 
-          @include tMax {
-            margin-top: 2px;
+          @include mMax {
+            margin-top: 0.53vw;
           }
         }
       }
@@ -2627,9 +2623,9 @@
       background: #fc6652;
       box-shadow: 0px 0px 50px rgba(252, 102, 82, 0.6);
 
-      @include tMax {
+      @include mMax {
         position: relative;
-        padding: 13px 15px 21px;
+        padding: 3.46vw 4vw 5.6vw;
       }
 
       span {
@@ -2645,12 +2641,12 @@
         line-height: 32px;
         color: #fc6652;
 
-        @include tMax {
+        @include mMax {
           position: absolute;
           left: 0;
           top: 0;
-          width: 49px;
-          height: 47px;
+          width: 13.06vw;
+          height: 12.53vw;
         }
       }
 
@@ -2663,12 +2659,12 @@
         color: #ffffff;
         margin-bottom: 38px;
 
-        @include tMax {
-          margin-bottom: 40px;
-          font-size: 16px;
-          line-height: 22px;
+        @include mMax {
+          margin-bottom: 10.66vw;
+          font-size: 4.26vw;
+          line-height: 5.86vw;
           text-align: left;
-          padding-left: 55px;
+          padding-left: 14.66vw;
         }
       }
 
@@ -2685,11 +2681,11 @@
           font-weight: 500;
         }
 
-        @include tMax {
-          font-size: 13px;
-          line-height: 18px;
+        @include mMax {
+          font-size: 3.46vw;
+          line-height: 4.8vw;
           text-align: left;
-          margin-bottom: 16px;
+          margin-bottom: 4.26vw;
         }
 
         @include mMax {
@@ -2708,11 +2704,11 @@
     flex-wrap: wrap;
     margin: 54px -11px -22px;
 
-    @include tMax {
+    @include mMax {
       justify-content: center;
 
-      @include tMax {
-        margin: 16px -10px 0;
+      @include mMax {
+        margin: 4.26vw -2.66vw 0;
       }
     }
 
@@ -2723,9 +2719,9 @@
       align-items: center;
       margin-bottom: 22px;
 
-      @include tMax {
-        max-width: 90px;
-        margin: 0 10px 22px;
+      @include mMax {
+        max-width: 24vw;
+        margin: 0 2.66vw 5.86vw;
       }
     }
 
@@ -2740,14 +2736,14 @@
       border-radius: 20px;
       transition: 0.2s;
 
-      @include tMax {
-        max-width: 90px;
-        height: 90px;
+      @include mMax {
+        width: 24vw;
+        height: 24vw;
       }
 
       img {
         display: block;
-        max-width: 90%;
+        width: 50%;
       }
 
       &:hover {
@@ -2766,8 +2762,8 @@
     li {
       margin: 0 22px;
 
-      @include tMax {
-        margin: 0 16px;
+      @include mMax {
+        margin: 0 4.26vw;
       }
 
       &:first-child {
@@ -2790,14 +2786,14 @@
       border-radius: 20px;
       transition: 0.2s;
 
-      @include tMax {
-        width: 90px;
-        height: 90px;
+      @include mMax {
+        width: 24vw;
+        height: 24vw;
       }
 
       img {
         display: block;
-        max-width: 90%;
+        width: 50%;
       }
 
       &:hover {
@@ -2811,8 +2807,8 @@
   &-btn_wrap {
     margin-top: 40px;
 
-    @include tMax {
-      margin-top: 32px;
+    @include mMax {
+      margin-top: 8.53vw;
     }
 
     a {
@@ -2832,23 +2828,23 @@
       border-radius: 84px;
       transition: 0.2s;
 
-      @include tMax {
-        min-height: 56px;
-        max-width: 225px;
-        font-size: 18px;
-        line-height: 24px;
-        padding-left: 49px;
-        padding-right: 24px;
+      @include mMax {
+        min-height: 14.93vw;
+        max-width: 60vw;
+        font-size: 4.8vw;
+        line-height: 6.4vw;
+        padding-left: 13.06vw;
+        padding-right: 6.4vw;
         margin: 0 auto;
 
         span {
           position: relative;
-          font-size: 18px;
-          line-height: 24px;
+          font-size: 4.8vw;
+          line-height: 6.4vw;
         }
 
         img {
-          width: 37px;
+          width: 9.86vw;
         }
       }
 

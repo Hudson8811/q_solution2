@@ -45,7 +45,7 @@ body {
   margin: 0 auto;
 
   @include mMax {
-    width: calc(100% - 32px);
+    width: calc(100% - 8.53vw);
   }
 }
 
