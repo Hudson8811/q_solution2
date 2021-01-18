@@ -27,6 +27,7 @@ $(document).ready(function () {
 
 
     $("img.lazy").lazyload({
-        effect : "fadeIn"
+        effect : "fadeIn",
+        threshold : 0
     });
   });
