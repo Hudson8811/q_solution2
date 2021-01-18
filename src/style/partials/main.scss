@@ -167,7 +167,7 @@
         width: 25.58vw;
         max-width: 393px;
         z-index: 2;
-        filter: drop-shadow(0px 4px 50px rgba(252, 102, 82, 0.81));
+        filter: drop-shadow(0px 4px 10px rgba(252, 102, 82, 0.81));
         transition: 0.5s;
 
         @include mMax {
