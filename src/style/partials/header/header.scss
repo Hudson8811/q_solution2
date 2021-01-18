@@ -64,6 +64,11 @@
     text-align: center;
     color: #ffffff;
     text-decoration: none;
+    transition: 0.2s;
+
+    &:hover {
+      color: #fc6652;
+    }
 
     @include mMax {
       width: 49px;
@@ -81,6 +86,12 @@
     border: 1px solid #fc6652;
     border-radius: 20px;
     margin-right: 21px;
+    transition: 0.2s;
+
+    &:hover {
+      color: #fff;
+      background-color: #fc6652;
+    }
 
     @include mMax {
       height: 26px;

@@ -1,6 +1,19 @@
 .footer {
   padding-bottom: 80px;
 
+  .footer-phone {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    a,
+    span {
+      display: inline;
+      width: auto;
+      margin-bottom: 0;
+    }
+  }
+
   &-line {
     display: block;
     width: 100%;
@@ -26,7 +39,8 @@
       justify-content: center;
     }
 
-    a {
+    a,
+    p {
       display: block;
       margin-bottom: 16px;
       width: 50%;
@@ -99,6 +113,10 @@
           text-align: left;
         }
       }
+    }
+
+    a:hover {
+      color: #fc6652;
     }
   }
 

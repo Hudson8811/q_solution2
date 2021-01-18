@@ -849,7 +849,6 @@
   position: relative;
   padding-top: 298px;
   padding-bottom: 65px;
-  overflow: hidden;
 
   @include mMax {
     padding-top: 80px;
@@ -1017,7 +1016,7 @@
       line-height: 42px;
       color: #494947;
 
-      @include tMax {
+      @include mMax {
         font-size: 18px;
         line-height: 24px;
         margin-bottom: 16px;
@@ -1034,7 +1033,7 @@
       line-height: 32px;
       color: #555555;
 
-      @include tMax {
+      @include mMax {
         font-size: 13px;
         line-height: 18px;
         margin-bottom: 16px;
@@ -1069,6 +1068,7 @@
       }
 
       b {
+        flex-shrink: 0;
         display: block;
         width: 64px;
         height: 45px;
@@ -1089,7 +1089,7 @@
         }
       }
 
-      @include tMax {
+      @include mMax {
         height: 56px;
         max-width: 245px;
         font-size: 18px;
@@ -1149,6 +1149,11 @@
   padding-top: 167px;
   padding-bottom: 199px;
 
+  @include test1 {
+    padding-top: 10.87vw;
+    padding-bottom: 12.05vw;
+  }
+
   @include mMax {
     padding-top: 55px;
     padding-bottom: 180px;
@@ -1161,6 +1166,12 @@
     font-size: 32px;
     line-height: 42px;
     color: #555555;
+
+    @include test1 {
+      margin-bottom: 2.99vw;
+      font-size: 2.08vw;
+      line-height: 2.73vw;
+    }
 
     @include mMax {
       margin-bottom: 24px;
@@ -1175,6 +1186,10 @@
     align-items: stretch;
     flex-wrap: wrap;
     margin-bottom: -32px;
+
+    @include test1 {
+      margin-bottom: -2.08vw;
+    }
 
     @include mMax {
       display: block;
@@ -1197,6 +1212,13 @@
     border-radius: 20px;
     transition: 0.2s;
     text-decoration: none;
+
+    @include test1 {
+      padding: 0.58vw 1.23vw 0.58vw 2.08vw;
+      margin-bottom: 2.08vw;
+      box-shadow: 0px 0px 1.3vw rgba(67, 45, 36, 0.25);
+      border-radius: 1.3vw;
+    }
 
     @include mMax {
       width: 100%;
@@ -1223,6 +1245,11 @@
       line-height: 32px;
       color: #555555;
 
+      @include test1 {
+        font-size: 1.56vw;
+        line-height: 2.08vw;
+      }
+
       @include mMax {
         max-width: 162px;
         font-size: 13px;
@@ -1240,6 +1267,12 @@
       background: #fc6652;
       border-radius: 0px 0px 20px 20px;
 
+      @include test1 {
+        width: 4.62vw;
+        height: 0.78vw;
+        border-radius: 0px 0px 1.3vw 1.3vw;
+      }
+
       @include mMax {
         width: 41px;
         height: 7px;
@@ -1250,6 +1283,10 @@
     &:hover {
       @include dMin {
         transform: translateY(-20px);
+      }
+
+      @include test1 {
+        transform: translateY(-1.3vw);
       }
     }
   }
@@ -1264,6 +1301,14 @@
     opacity: 0.2;
     border-radius: 47px;
     transform: rotate(30deg);
+
+    @include test1 {
+      width: 27.47vw;
+      width: 27.47vw;
+      border-radius: 3.05vw;
+      left: -25.39vw;
+    }
+
     @include mMax {
       display: none;
     }
@@ -1285,6 +1330,15 @@
     border-radius: 50px;
     transform: rotate(24.48deg);
 
+    @include test1 {
+      width: 29.68vw;
+      height: 29.68vw;
+      border-radius: 3.25vw;
+      margin-left: -16.79vw;
+      bottom: 7.61vw;
+      border-width: 0.13vw;
+    }
+
     @include mMax {
       display: none;
     }
@@ -1296,6 +1350,12 @@
       border-radius: 46px;
       width: 408px;
       height: 408px;
+
+      @include test1 {
+        border-radius: 2.99vw;
+        width: 26.56vw;
+        height: 26.56vw;
+      }
     }
   }
 
@@ -1312,6 +1372,15 @@
     border-radius: 62px;
     transform: rotate(55.75deg);
 
+    @include test1 {
+      right: -32.55vw;
+      bottom: -13.02vw;
+      width: 36.45vw;
+      height: 36.45vw;
+      border-width: 0.13vw;
+      border-radius: 4.03vw;
+    }
+
     @include mMax {
       display: none;
     }
@@ -1325,6 +1394,14 @@
       height: 560px;
       margin-left: 45px;
       margin-top: -45px;
+
+      @include test1 {
+        border-radius: 4.03vw;
+        height: 36.45vw;
+        width: 36.45vw;
+        margin-left: 2.92vw;
+        margin-top: -2.92vw;
+      }
     }
   }
 }
@@ -1565,6 +1642,10 @@
     width: 100%;
     height: 26px;
     background-color: #fff;
+
+    @media screen and (min-width: 2001px) {
+      display: none;
+    }
   }
 
   &-top_image {
@@ -1579,6 +1660,10 @@
       object-fit: cover;
       object-position: top;
       opacity: 0.97;
+
+      @media screen and (min-width: 2001px) {
+        display: none;
+      }
     }
 
     @include mMax {
@@ -1598,6 +1683,8 @@
 }
 
 .metrix {
+  position: relative;
+  z-index: 9;
   padding-bottom: 326px;
   padding-top: 160px;
   margin-top: -160px;
@@ -2606,9 +2693,10 @@
 
   &-pay {
     display: flex;
-    justify-content: stretch;
+    justify-content: center;
     align-items: stretch;
-    margin: 54px -11px 0;
+    flex-wrap: wrap;
+    margin: 54px -11px -22px;
 
     @include tMax {
       justify-content: center;
@@ -2620,14 +2708,14 @@
 
     li {
       margin: 0 11px;
-      width: 33.333%;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-bottom: 22px;
 
       @include tMax {
         max-width: 90px;
-        margin: 0 10px;
+        margin: 0 10px 22px;
       }
     }
 
@@ -2636,8 +2724,7 @@
       box-sizing: border-box;
       justify-content: center;
       align-items: center;
-      width: 100%;
-      max-width: 100px;
+      width: 100px;
       height: 100px;
       border: 1px solid #cbcbcb;
       border-radius: 20px;

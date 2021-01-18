@@ -40,9 +40,13 @@ body {
 
 .container {
   position: relative;
-  width: calc(100% - 32px);
+  width: calc(100% - 64px);
   max-width: 1200px;
   margin: 0 auto;
+
+  @include mMax {
+    width: calc(100% - 32px);
+  }
 }
 
 .raleway {
@@ -68,11 +72,27 @@ body {
   color: #ffffff;
   background: #fc6652;
   border-radius: 100px;
+  transition: 0.2s;
+  border: 2px solid #fc6652;
 
   span {
     display: block;
     margin-right: auto;
     padding-right: 5px;
+  }
+
+  path {
+    transition: 0.2s;
+  }
+
+  &:hover {
+    border: 2px solid #fc6652;
+    background-color: #fff;
+    color: #fc6652;
+
+    path {
+      fill: #fc6652;
+    }
   }
 }
 
@@ -92,11 +112,21 @@ body {
   background: transparent;
   border: 1px solid #ffffff;
   border-radius: 100px;
+  transition: 0.2s;
 
   span {
     display: block;
     margin-right: auto;
     padding-right: 5px;
+  }
+
+  path {
+    transition: 0.2s;
+  }
+
+  &:hover {
+    border: 1px solid #fc6652;
+    background-color: #fc6652;
   }
 }
 

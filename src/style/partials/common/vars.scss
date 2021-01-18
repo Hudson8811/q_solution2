@@ -10,6 +10,12 @@
   }
 }
 
+@mixin test1 {
+  @media (max-width: 1250px) and (min-width: 769px) {
+    @content;
+  }
+}
+
 @mixin dMin {
   @media (min-width: 769px) {
     @content;
