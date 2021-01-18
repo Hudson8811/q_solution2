@@ -28,6 +28,6 @@ $(document).ready(function () {
 
     $("img.lazy").lazyload({
         effect : "fadeIn",
-        threshold : 1000
+        threshold : 2000
     });
   });
