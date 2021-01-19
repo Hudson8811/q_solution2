@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $('.main_section-banner_img').addClass('is-active')
 
     var $page = $('html, body');
     $('a.next-link').click(function(e) {
@@ -13,7 +14,6 @@ $(document).ready(function () {
         $('.revealator-slideleft').removeClass('revealator-slideleft revealator-once revealator-delay3');
         $('.revealator-slideright').removeClass('revealator-slideright revealator-once revealator-delay3');
     }
-
 
     $("img.lazy").lazyload({
         effect : "fadeIn",
