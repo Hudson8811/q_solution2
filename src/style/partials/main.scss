@@ -87,17 +87,17 @@
       margin: 0 auto;
       padding: 6.4vw 0 14.4vw;
 
-      &:after {
-        content: '';
-        position: absolute;
-        bottom: 9vw;
-        display: block;
-        height: 8.8vw;
-        width: 83.46vw;
-        background: rgba(252, 102, 82, 0.54);
-        filter: blur(60px);
-        border-radius: 60%;
-      }
+      // &:after {
+      //   content: '';
+      //   position: absolute;
+      //   bottom: 9vw;
+      //   display: block;
+      //   height: 8.8vw;
+      //   width: 83.46vw;
+      //   background: rgba(252, 102, 82, 0.54);
+      //   filter: blur(60px);
+      //   border-radius: 60%;
+      // }
     }
 
     &:before {
@@ -118,81 +118,79 @@
       display: block;
 
       &:nth-child(1) {
-        top: -4vw;
-        width: 28.64vw;
-        max-width: 440px;
+        top: -6.5vw;
+        width: 35vw;
+        max-width: 538px;
         z-index: 0;
-        filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.74));
 
         @include dMax {
           top: -61px;
         }
 
         @include mMax {
-          top: 9.06vw;
-          width: 47.46vw;
+          top: 5.06vw;
+          width: 57.46vw;
+          left: 0vw;
         }
       }
 
       &:nth-child(2) {
-        right: 4.5vw;
-        bottom: 0.5vw;
-        width: 13.21vw;
-        max-width: 203px;
+        right: 1vw;
+        bottom: -3vw;
+        width: 19.9vw;
+        max-width: 306px;
         z-index: 3;
-        filter: drop-shadow(0px 4px 50px #ce5241);
 
         @include mMax {
-          width: 21.33vw;
-          bottom: 26.13vw;
-          right: 7.5vw;
+          width: 33vw;
+          bottom: 20.13vw;
+          right: -1vw;
         }
 
         @include dMax {
-          right: 69px;
-          bottom: 7px;
+          right: 10px;
+          bottom: -80px;
         }
       }
 
       &:nth-child(3) {
-        top: 4vw;
-        right: 2.8vw;
+        top: 3.8vw;
+        right: 2.5vw;
         width: 8.46vw;
         max-width: 130px;
         z-index: 4;
 
         @include mMax {
           width: 13.86vw;
-          top: 22.86vw;
-          right: 4.9vw;
+          top: 21.86vw;
+          right: 1.9vw;
         }
 
         @include dMax {
-          top: 61px;
-          right: 43px;
+          top: 91px;
+          right: 32px;
         }
       }
 
       &:nth-child(4) {
         position: absolute;
         display: block;
-        left: -1.5vw;
-        top: -5.5vw;
-        width: 25.58vw;
-        max-width: 393px;
+        left: -5vw;
+        top: -9vw;
+        width: 32.5vw;
+        max-width: 500px;
         z-index: 2;
-        filter: drop-shadow(0px 4px 10px rgba(252, 102, 82, 0.81));
         transition: 0.5s;
 
         @include mMax {
-          width: 42.13vw;
-          top: 6vw;
-          left: -2vw;
+          width: 53.13vw;
+          top: 1vw;
+          left: -6vw;
         }
 
         @include dMax {
-          top: -84px;
-          left: -23px;
+          top: -100px;
+          left: -73px;
         }
       }
     }
@@ -201,33 +199,18 @@
       @include dMin {
         & > img.main_section-banner_img {
           &:nth-child(3) {
-            top: 3vw;
-            right: 1.8vw;
-
-            @include dMax {
-              top: 46px;
-              right: 27px;
-            }
+            margin-top: -20px;
+            margin-right: -20px;
           }
 
           &:nth-child(2) {
-            right: 3.5vw;
-            bottom: -1.5vw;
-
-            @include dMax {
-              right: 53px;
-              bottom: -23px;
-            }
+            margin-right: -20px;
+            margin-bottom: -20px;
           }
 
           &:nth-child(4) {
-            top: -6.5vw;
-            left: -2.5vw;
-
-            @include dMax {
-              top: -99px;
-              left: -38px;
-            }
+            margin-top: -20px;
+            margin-left: -20px;
           }
         }
       }
