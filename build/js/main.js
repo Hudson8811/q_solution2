@@ -10,7 +10,10 @@ var Revealator="undefined"!=typeof Revealator?Revealator:{};$(function(){Reveala
 /* my scripts */
 
 $(document).ready(function () {
-    $('.main_section-banner_img').addClass('is-active')
+    setTimeout(() => {
+        $('.main_section-banner_img').addClass('is-active');
+    },1000);
+    
 
     var $page = $('html, body');
     $('a.next-link').click(function(e) {
