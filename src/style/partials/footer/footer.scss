@@ -2,7 +2,7 @@
   padding-bottom: 80px;
 
   @include test1 {
-    padding-bottom: 5.2vw;
+    padding-bottom: (5.2vw * 1.2);
   }
 
   &-line {
@@ -14,7 +14,7 @@
     background: linear-gradient(to right, #a2a2a200, #a2a2a2, #a2a2a200);
 
     @include test1 {
-      margin-bottom: 3.125vw;
+      margin-bottom: (3.125vw * 1.2);
     }
 
     @include mMax {
@@ -30,7 +30,7 @@
     margin-bottom: -16px;
 
     @include test1 {
-      margin-bottom: -1.04vw;
+      margin-bottom: (-1.04vw * 1.2);
     }
 
     @include mMax {
@@ -50,9 +50,9 @@
       color: #ffffff;
 
       @include test1 {
-        margin-bottom: 1.04vw;
-        font-size: 1.17vw;
-        line-height: 1.56vw;
+        margin-bottom: (1.04vw * 1.2);
+        font-size: (1.17vw * 1.2);
+        line-height: (1.56vw * 1.2);
       }
 
       &:nth-child(2n) {
@@ -71,8 +71,8 @@
             margin: 0 20px;
 
             @include test1 {
-              height: 1.56vw;
-              margin: 0 1.3vw;
+              height: (1.56vw * 1.2);
+              margin: 0 (1.3vw * 1.2);
             }
           }
         }
@@ -139,7 +139,7 @@
     margin-top: 40px;
 
     @include test1 {
-      margin-top: 2.6vw;
+      margin-top: (2.6vw * 1.2);
     }
 
     @include mMax {
@@ -150,7 +150,7 @@
       margin: 0 17px;
 
       @include test1 {
-        margin: 0 1.1vw;
+        margin: 0 (1.1vw * 1.2);
       }
 
       @include mMax {
