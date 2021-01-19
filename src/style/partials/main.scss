@@ -4,6 +4,11 @@
   padding: 200px 0 213px;
   height: 762px;
 
+  @include test1 {
+    padding: 13.02vw 0 13.86vw;
+    height: 49.6vw;
+  }
+
   @include mMax {
     height: auto;
     padding-top: 20.8vw;
@@ -237,12 +242,23 @@
     max-width: 737px;
     margin-right: auto;
 
+    @include test1 {
+      max-width: 46.87vw;
+      padding-right: 3.32vw;
+    }
+
     h2 {
       display: block;
       margin-bottom: 8px;
       font-weight: bold;
       font-size: 32px;
       line-height: 42px;
+
+      @include test1 {
+        margin-bottom: 0.52vw;
+        font-size: 2.08vw;
+        line-height: 2.73vw;
+      }
     }
 
     p {
@@ -251,6 +267,11 @@
       font-size: 24px;
       line-height: 32px;
       color: #b4b4b4;
+
+      @include test1 {
+        font-size: 1.56vw;
+        line-height: 2.08vw;
+      }
     }
 
     @include mMax {
@@ -291,6 +312,11 @@
       max-width: 585px;
       margin: 120px 0 0;
 
+      @include test1 {
+        max-width: 38.08vw;
+        margin: 7.81vw 0 0;
+      }
+
       @include mMax {
         position: absolute;
         top: 100%;
@@ -309,6 +335,12 @@
       line-height: 26px;
       text-align: center;
       color: #b6b6b6;
+
+      @include test1 {
+        margin-top: 0.84vw;
+        font-size: 1.17vw;
+        line-height: 1.69vw;
+      }
     }
 
     @include mMax {
@@ -349,12 +381,23 @@
     margin-left: -41px;
     margin-bottom: -49px;
 
+    @include test1 {
+      width: 5.33vw;
+      height: 6.38vw;
+      margin-left: -2.66vw;
+      margin-bottom: -3.19vw;
+    }
+
     @include mMax {
       bottom: -0.53vw;
       width: 16.53vw;
       height: 17.66vw;
       margin-left: -8.26vw;
       margin-bottom: -9.33vw;
+
+      img {
+        width: 4.26vw;
+      }
     }
 
     &:before {
@@ -366,6 +409,10 @@
       width: 100%;
       height: 49px;
       background: center / cover url(../img/border.svg) no-repeat;
+
+      @include test1 {
+        height: 3.19vw;
+      }
 
       @include mMax {
         height: 8vw;
@@ -382,6 +429,13 @@
       height: 94px;
       border-radius: 60px;
       background-color: #fff;
+
+      @include test1 {
+        border-radius: 3.9vw;
+        top: 0.78vw;
+        width: 4.03vw;
+        height: 6.119vw;
+      }
 
       @include mMax {
         top: 1.06vw;
@@ -402,6 +456,16 @@
       background: #ffffff;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
       border-radius: 60px;
+
+      @include test1 {
+        width: 3.51vw;
+        height: 5.07vw;
+        border-radius: 3.9vw;
+
+        img {
+          width: 1.04vw;
+        }
+      }
 
       @include mMax {
         width: 10.66vw;
@@ -435,6 +499,10 @@
   margin: 0 auto;
   overflow: hidden;
 
+  @include test1 {
+    padding-top: 7.22vw;
+  }
+
   @include mMax {
     padding-top: 29.6vw;
   }
@@ -446,6 +514,12 @@
     background: #fc6652;
     border-radius: 20px;
     margin: 0 auto;
+
+    @include test1 {
+      width: 4.16vw;
+      height: 0.26vw;
+      border-radius: 1.3vw;
+    }
 
     @include mMax {
       display: none;
@@ -469,6 +543,12 @@
     text-transform: uppercase;
     color: #494947;
 
+    @include test1 {
+      margin-top: 2.34vw;
+      font-size: 4.16vw;
+      line-height: 4.68vw;
+    }
+
     @include mMax {
       margin-top: 0;
       font-size: 5.33vw;
@@ -485,6 +565,11 @@
       margin-bottom: 0;
       margin-top: -16px;
       line-height: 48px;
+
+      @include test1 {
+        margin-top: -1.04vw;
+        line-height: 3.125vw;
+      }
 
       @include mMax {
         margin-top: -1.56vw;
@@ -514,6 +599,10 @@
   position: relative;
   margin-top: 118px;
 
+  @include test1 {
+    margin-top: 7.68vw;
+  }
+
   @include mMax {
     margin-top: 4vw;
   }
@@ -524,6 +613,13 @@
     bottom: -125px;
     width: 291px;
     height: 291px;
+
+    @include test1 {
+      left: 3.25vw;
+      bottom: -8.13vw;
+      width: 18.94vw;
+      height: 18.94vw;
+    }
 
     @include mMax {
       display: none;
@@ -537,6 +633,10 @@
       opacity: 0.1;
       border-radius: 34.2625px;
       transform: rotate(-32.2deg);
+
+      @include test1 {
+        border-radius: 2.21vw;
+      }
 
       &:nth-child(2) {
         margin-left: 7px;
@@ -552,6 +652,12 @@
     line-height: 42px;
     color: #555555;
     margin-bottom: 39px;
+
+    @include test1 {
+      font-size: 2.08vw;
+      line-height: 2.73vw;
+      margin-bottom: 2.53vw;
+    }
 
     @include mMax {
       margin-bottom: 1.86vw;
@@ -575,6 +681,10 @@
     border-radius: 20px;
     box-shadow: 0px 30px 30px rgba(109, 94, 88, 0.25);
 
+    @include test1 {
+      border-radius: 1.3vw;
+    }
+
     @include mMax {
       width: 100%;
       margin-bottom: 4vw;
@@ -586,6 +696,10 @@
     box-sizing: border-box;
     width: 43.66%;
     padding-left: 30px;
+
+    @include test1 {
+      padding-left: 1.95vw;
+    }
 
     @include mMax {
       width: 100%;
@@ -599,6 +713,12 @@
     right: 32px;
     z-index: 0;
     max-width: 100%;
+
+    @include test1 {
+      width: 20.05vw;
+      top: -7.81vw;
+      right: 2.08vw;
+    }
 
     @include mMax {
       top: 0;
@@ -617,6 +737,10 @@
     & + & {
       margin-top: 20px;
 
+      @include test1 {
+        margin-top: 1.3vw;
+      }
+
       @include mMax {
         margin-top: 2.13vw;
       }
@@ -632,6 +756,15 @@
       max-width: 175px;
       border-radius: 20px;
       box-shadow: 0px 30px 30px rgba(109, 94, 88, 0.25);
+
+      @include test1 {
+        max-width: 11.39vw;
+        border-radius: 1.3vw;
+
+        img:nth-child(2) {
+          width: 1.43vw;
+        }
+      }
 
       @include mMax {
         width: 28.8vw;
@@ -667,6 +800,16 @@
         line-height: 22px;
         color: #ffffff;
 
+        @include test1 {
+          right: 0.19vw;
+          bottom: 0.19vw;
+          width: 4.42vw;
+          height: 1.36vw;
+          border-radius: 1.3vw 0;
+          font-size: 0.78vw;
+          line-height: 1.43vw;
+        }
+
         @include mMax {
           width: 11.2vw;
           height: 3.46vw;
@@ -685,7 +828,13 @@
       line-height: 32px;
       color: #494947;
 
-      @include tMax {
+      @include test1 {
+        margin-left: 1.95vw;
+        font-size: 1.56vw;
+        line-height: 2.08vw;
+      }
+
+      @include mMax {
         font-size: 4.26vw;
         line-height: 5.86vw;
         margin-left: 2.66vw;
@@ -699,6 +848,10 @@
     align-items: center;
     margin-top: 25px;
 
+    @include test1 {
+      margin-top: 1.62vw;
+    }
+
     @include mMax {
       margin-top: 4vw;
     }
@@ -706,6 +859,10 @@
     svg {
       display: block;
       flex-shrink: 0;
+
+      @include test1 {
+        width: 3.19vw;
+      }
 
       @include mMax {
         width: 8.53vw;
@@ -720,12 +877,18 @@
       line-height: 32px;
       color: #494947;
 
+      @include test1 {
+        margin-left: 1.56vw;
+        font-size: 1.56vw;
+        line-height: 2.08vw;
+      }
+
       b {
         font-weight: 700;
         color: #fc6652;
       }
 
-      @include tMax {
+      @include mMax {
         font-size: 4.26vw;
         line-height: 5.86vw;
         margin-left: 5.06vw;
@@ -767,10 +930,19 @@
     margin-left: 10%;
     margin-bottom: 10%;
 
+    @include test1 {
+      font-size: 1.3vw;
+      line-height: 1.75vw;
+    }
+
     img {
       display: block;
       width: 224px;
       transition: 0.2s;
+
+      @include test1 {
+        width: 14.58vw;
+      }
 
       @include mMax {
         width: 29.86vw;
@@ -781,6 +953,10 @@
       display: block;
       margin-left: -25px;
       transition: 0.2s;
+
+      @include test1 {
+        margin-left: -1.62vw;
+      }
 
       @include mMax {
         font-weight: 400;
@@ -822,6 +998,21 @@
       margin-left: 42px;
     }
 
+    @include test1 {
+      padding: 1.17vw 2.4vw 1.04vw 1.95vw;
+      border-radius: 0 0 1.3vw 1.3vw;
+
+      span {
+        font-size: 1.56vw;
+        line-height: 2.08vw;
+        margin-left: 2.73vw;
+      }
+
+      img {
+        width: 3.84vw;
+      }
+    }
+
     @include mMax {
       padding: 2.4vw 2.93vw 2.13vw;
       border-radius: 0 0 10px 10px;
@@ -858,6 +1049,11 @@
   padding-top: 298px;
   padding-bottom: 65px;
 
+  @include test1 {
+    padding-top: 19.4vw;
+    padding-bottom: 4.23vw;
+  }
+
   @include mMax {
     padding-top: 21.33vw;
     padding-bottom: 14.66vw;
@@ -890,6 +1086,11 @@
       width: 46px;
       margin-left: -42px;
 
+      @include test1 {
+        width: 2.99vw;
+        margin-left: -2.73vw;
+      }
+
       @include mMax {
         width: 6.4vw;
         margin-left: -5.33vw;
@@ -897,6 +1098,10 @@
 
       &-1 {
         margin-top: -26px;
+
+        @include test1 {
+          margin-top: -1.69vw;
+        }
 
         @include mMax {
           margin-top: -3.46vw;
@@ -915,6 +1120,15 @@
       border: 3px solid #fc6652;
       box-sizing: border-box;
       border-radius: 35px;
+
+      @include test1 {
+        top: -1.95vw;
+        left: 8.07vw;
+        width: calc(100% + 4.88vw);
+        height: 29.88vw;
+        border-width: 0.19vw;
+        border-radius: 2.27vw;
+      }
 
       @include mMax {
         width: 65.86vw;
@@ -945,6 +1159,12 @@
         line-height: 35px;
         color: #555555;
 
+        @include test1 {
+          max-width: 15.95vw;
+          font-size: 1.75vw;
+          line-height: 2.27vw;
+        }
+
         @include mMax {
           max-width: 33.33vw;
           font-size: 3.46vw;
@@ -961,6 +1181,14 @@
       align-items: center;
       margin-left: auto;
 
+      @include test1 {
+        max-width: 20.44vw;
+
+        img {
+          width: 2.14vw;
+        }
+      }
+
       span {
         display: block;
         margin-left: 8px;
@@ -968,6 +1196,12 @@
         font-size: 27px;
         line-height: 34px;
         color: #494947;
+
+        @include test1 {
+          margin-left: 0.52vw;
+          font-size: 1.75vw;
+          line-height: 2.21vw;
+        }
       }
 
       @include mMax {
@@ -992,6 +1226,11 @@
         width: calc(100% + 68px);
         margin: 0 -34px;
 
+        @include test1 {
+          width: calc(100% + 4.42vw);
+          margin: 0 -2.21vw;
+        }
+
         @include mMax {
           margin: 0 -4vw;
           width: calc(100% + 8vw);
@@ -1007,6 +1246,11 @@
     box-sizing: border-box;
     padding-left: 10px;
     margin-left: auto;
+
+    @include test1 {
+      width: calc(31.66% + 0.65vw);
+      padding-left: 0.65vw;
+    }
 
     @include mMax {
       position: static;
@@ -1024,6 +1268,12 @@
       line-height: 42px;
       color: #494947;
 
+      @include test1 {
+        margin-bottom: 1.56vw;
+        font-size: 2.08vw;
+        line-height: 2.73vw;
+      }
+
       @include mMax {
         font-size: 4.8vw;
         line-height: 6.4vw;
@@ -1040,6 +1290,12 @@
       font-size: 24px;
       line-height: 32px;
       color: #555555;
+
+      @include test1 {
+        margin-bottom: 1.56vw;
+        font-size: 1.56vw;
+        line-height: 2.08vw;
+      }
 
       @include mMax {
         font-size: 3.46vw;
@@ -1081,6 +1337,23 @@
         width: 64px;
         height: 45px;
         background: center / cover url(../img/link-icon1.svg) no-repeat;
+      }
+
+      @include test1 {
+        height: 5.46vw;
+        padding: 0.32vw 2.34vw 0.32vw 4.16vw;
+        border-radius: 6.51vw;
+        font-size: 1.56vw;
+        line-height: 2.08vw;
+
+        span {
+          padding-right: 0.65vw;
+        }
+
+        b {
+          width: 4.16vw;
+          height: 2.92vw;
+        }
       }
 
       &:hover {
@@ -1127,6 +1400,11 @@
     max-width: 100%;
     z-index: 0;
 
+    @include test1 {
+      top: -8.46vw;
+      width: 25.32vw;
+    }
+
     @include mMax {
       top: -6.93vw;
       right: -2.66vw;
@@ -1159,7 +1437,7 @@
 
   @include test1 {
     padding-top: 10.87vw;
-    padding-bottom: 180px;
+    padding-bottom: 12.95vw;
   }
 
   @include mMax {
@@ -1419,6 +1697,10 @@
   z-index: 2;
   margin-top: -97px;
 
+  @include test1 {
+    margin-top: -6.31vw;
+  }
+
   @include mMax {
     margin-top: -20.66vw;
   }
@@ -1429,6 +1711,10 @@
     justify-content: flex-start;
     align-items: stretch;
     min-height: 232px;
+
+    @include test1 {
+      min-height: 15.1vw;
+    }
 
     @include mMax {
       height: 81.06vw;
@@ -1452,6 +1738,10 @@
       border-radius: 20px;
       filter: drop-shadow(0px 10px 50px rgba(255, 95, 73, 0.29));
 
+      @include test1 {
+        border-radius: 1.3vw;
+      }
+
       @include mMax {
         width: 100%;
         background: linear-gradient(149.9deg, #1a1b22 6.07%, #181b27 63.71%), #fafafa;
@@ -1466,6 +1756,10 @@
     box-sizing: border-box;
     width: 60%;
     padding: 45px 27.5% 38px 34px;
+
+    @include test1 {
+      padding: 2.92vw 27.5% 2.47vw 2.21vw;
+    }
 
     @include mMax {
       width: 100%;
@@ -1482,6 +1776,12 @@
       text-transform: uppercase;
       color: #ffffff;
 
+      @include test1 {
+        margin-bottom: 1.36vw;
+        font-size: 1.56vw;
+        line-height: 2.08vw;
+      }
+
       @include mMax {
         font-size: 4.8vw;
         line-height: 6.4vw;
@@ -1495,6 +1795,12 @@
       font-size: 24px;
       line-height: 32px;
       color: #ffffff;
+
+      @include test1 {
+        max-width: 23.17vw;
+        font-size: 1.56vw;
+        line-height: 2.08vw;
+      }
 
       @include mMax {
         position: relative;
@@ -1511,6 +1817,10 @@
       right: 4px;
       display: block;
       width: 44%;
+
+      @include test1 {
+        right: 0.26vw;
+      }
 
       @include mMax {
         bottom: auto;
@@ -1532,6 +1842,10 @@
     background: #fc6652;
     clip-path: polygon(19% 0%, 100% 0, 100% 100%, 0% 100%);
 
+    @include test1 {
+      border-radius: 0 1.3vw 1.3vw 0;
+    }
+
     @include mMax {
       margin-top: -4.26vw;
       width: 100%;
@@ -1544,6 +1858,11 @@
   &-number {
     position: absolute;
     right: 5px;
+
+    @include test1 {
+      right: 0.32vw;
+      width: 22.18vw;
+    }
 
     @include mMax {
       width: 68vw;
@@ -1576,6 +1895,22 @@
       color: #fc6652;
       padding-right: 10px;
       margin-right: auto;
+    }
+
+    @include test1 {
+      min-height: 4.55vw;
+      padding: 0 0.97vw 0 1.69vw;
+      border-radius: 4.23vw;
+
+      span {
+        font-size: 1.43vw;
+        line-height: 1.95vw;
+        padding-right: 0.65vw;
+      }
+
+      img {
+        width: 2.73vw;
+      }
     }
 
     @include mMax {
@@ -1615,6 +1950,11 @@
     radial-gradient(34.24% 11.01% at 47.69% 104.02%, #8a2e21 0%, rgba(69, 43, 20, 0) 100%),
     linear-gradient(180deg, #15161e 3.65%, #0c0d11 102.18%);
 
+  @include test1 {
+    margin-top: -6.9vw;
+    padding-top: 22.72vw;
+  }
+
   @include mMax {
     margin-top: -48vw;
     padding-top: 93.06vw;
@@ -1630,6 +1970,10 @@
     width: 100%;
     height: 400px;
     overflow: hidden;
+
+    @include test1 {
+      top: -25.58vw;
+    }
 
     .situation_block-figur-3 {
       top: 0;
@@ -1695,6 +2039,12 @@
   margin-top: -160px;
   overflow: hidden;
 
+  @include test1 {
+    padding-bottom: 21.22vw;
+    padding-top: 10.41vw;
+    margin-top: -10.41vw;
+  }
+
   @include mMax {
     padding-bottom: 31.2vw;
     padding-top: 0;
@@ -1718,6 +2068,13 @@
     margin-top: -50px;
     max-width: calc(100% - 650px);
 
+    @include test1 {
+      margin-top: -3.25vw;
+      max-width: 38.28vw;
+      min-width: 1px;
+      margin-right: auto;
+    }
+
     @include mMax {
       margin-top: 25.6vw;
       width: 100%;
@@ -1731,6 +2088,10 @@
     &_btn {
       position: relative;
       margin-top: 41px;
+
+      @include test1 {
+        margin-top: 2.66vw;
+      }
     }
 
     h2 {
@@ -1740,6 +2101,12 @@
       line-height: 42px;
       color: #ffffff;
       margin-bottom: 38px;
+
+      @include test1 {
+        font-size: 2.08vw;
+        line-height: 2.73vw;
+        margin-bottom: 2.47vw;
+      }
 
       @include mMax {
         font-size: 4.8vw;
@@ -1755,6 +2122,11 @@
       line-height: 32px;
       color: #c4c4c4;
 
+      @include test1 {
+        font-size: 1.56vw;
+        line-height: 2.08vw;
+      }
+
       @include mMax {
         font-size: 3.46vw;
         line-height: 4.8vw;
@@ -1762,6 +2134,10 @@
 
       & + p {
         margin-top: 16px;
+
+        @include test1 {
+          margin-top: 1.04vw;
+        }
 
         @include mMax {
           margin-top: 2.13vw;
@@ -1789,6 +2165,19 @@
       color: #ffffff;
       filter: drop-shadow(0px 20px 100px #ac3829);
       transition: 0.2s;
+
+      @include test1 {
+        min-height: 5.46vw;
+        padding: 0 2.9vw 0 3.9vw;
+        border-radius: 6.51vw;
+        max-width: 24.73vw;
+        font-size: 1.56vw;
+        line-height: 2.08vw;
+
+        img {
+          width: 2.4vw;
+        }
+      }
 
       @include mMax {
         position: relative;
@@ -1824,10 +2213,16 @@
     top: -84px;
     right: 80px;
 
+    @include test1 {
+      top: -5.46vw;
+      right: 5.2vw;
+      width: 23.3vw;
+    }
+
     @include mMax {
-      width: 255px;
+      width: 68vw;
       right: 0;
-      top: 55px;
+      top: 14.66vw;
     }
   }
 
@@ -1942,6 +2337,10 @@
 .exclusive {
   padding-bottom: 124px;
 
+  @include test1 {
+    padding-bottom: 8.07vw;
+  }
+
   @include mMax {
     padding-bottom: 10.66vw;
   }
@@ -1980,6 +2379,12 @@
     color: #fc6652;
     margin-bottom: 47px;
 
+    @include test1 {
+      font-size: 2.47vw;
+      line-height: 1.3vw;
+      margin-bottom: 3.05vw;
+    }
+
     @include mMax {
       font-size: 8.53vw;
       line-height: 8.53vw;
@@ -2002,6 +2407,13 @@
       height: 73px;
       background: center / cover url(../img/ex-bef.svg) no-repeat;
 
+      @include test1 {
+        left: -1.04vw;
+        bottom: 0.78vw;
+        width: 5.2vw;
+        height: 4.75vw;
+      }
+
       @include mMax {
         width: 14.93vw;
         height: 13.33vw;
@@ -2018,6 +2430,13 @@
     min-width: 48.75%;
     padding-left: 15px;
 
+    @include test1 {
+      padding-left: 0.97vw;
+      max-width: 38.08vw;
+      margin-left: auto;
+      min-width: 1px;
+    }
+
     @include mMax {
       width: 100%;
       padding-left: 0;
@@ -2030,6 +2449,12 @@
       font-size: 32px;
       line-height: 42px;
       color: #ffffff;
+
+      @include test1 {
+        margin-bottom: 2.08vw;
+        font-size: 2.08vw;
+        line-height: 2.73vw;
+      }
 
       @include mMax {
         font-size: 4.8vw;
@@ -2045,8 +2470,17 @@
       line-height: 32px;
       color: #c4c4c4;
 
+      @include test1 {
+        font-size: 1.56vw;
+        line-height: 2.73vw;
+      }
+
       & + p {
         margin-top: 16px;
+
+        @include test1 {
+          margin-top: 1.04vw;
+        }
 
         @include mMax {
           margin-top: 2.13vw;
@@ -2062,6 +2496,10 @@
     .metrix-content_btn {
       min-height: 94px;
 
+      @include test1 {
+        min-height: 6.11vw;
+      }
+
       @include mMax {
         margin-top: -4vw;
         min-height: 14.93vw;
@@ -2074,6 +2512,11 @@
       min-height: 94px;
       max-width: 453px;
       box-shadow: 0px 20px 100px #ac3829;
+
+      @include test1 {
+        min-height: 6.11vw;
+        max-width: 29.49vw;
+      }
 
       @include mMax {
         position: relative;
@@ -2112,13 +2555,26 @@
     color: #ffffff;
     background: #fc6652;
     border-radius: 100px;
-
     transition: 0.2s;
+
+    @include test1 {
+      padding: 0.32vw 2.27vw;
+      font-size: 1.56vw;
+      line-height: 2.08vw;
+
+      img {
+        width: 3.19vw;
+      }
+    }
 
     span {
       display: block;
       margin-right: auto;
       padding-right: 5px;
+
+      @include test1 {
+        padding-right: 0.32vw;
+      }
     }
   }
 
@@ -2128,6 +2584,12 @@
     right: 20px;
     display: block;
     max-width: 100%;
+
+    @include test1 {
+      top: 9.44vw;
+      right: 1.3vw;
+      width: 30.07vw;
+    }
 
     @include mMax {
       width: 68vw;
@@ -2156,6 +2618,12 @@
       right: 85px;
       display: block;
       height: 352px;
+
+      @include test1 {
+        margin-top: -3.25vw;
+        right: 5.53vw;
+        height: 22.91vw;
+      }
     }
 
     &_img {
@@ -2229,6 +2697,11 @@
   padding-bottom: 228px;
   overflow: hidden;
 
+  @include test1 {
+    padding-top: 4.47vw;
+    padding-bottom: 14.84vw;
+  }
+
   @include mMax {
     padding-top: 10.66vw;
     padding-bottom: 21.33vw;
@@ -2252,6 +2725,14 @@
     min-height: 391px;
     margin-top: 45px;
 
+    @include test1 {
+      margin-top: 2.92vw;
+      min-width: 1px;
+      max-width: 44.79vw;
+      margin-right: auto;
+      min-height: 25.45vw;
+    }
+
     @include mMax {
       margin-top: 0;
       position: static;
@@ -2272,6 +2753,12 @@
       line-height: 42px;
       color: #ffffff;
 
+      @include test1 {
+        margin-bottom: 1.04vw;
+        font-size: 2.08vw;
+        line-height: 2.73vw;
+      }
+
       @include mMax {
         font-size: 4.8vw;
         line-height: 6.4vw;
@@ -2285,6 +2772,11 @@
       font-size: 24px;
       line-height: 32px;
       color: #ffffff;
+
+      @include test1 {
+        font-size: 1.56vw;
+        line-height: 2.08vw;
+      }
 
       @include mMax {
         font-size: 3.46vw;
@@ -2300,6 +2792,10 @@
     .metrix-content_btn {
       height: 83px;
 
+      @include test1 {
+        height: 5.4vw;
+      }
+
       @include mMax {
         width: 100%;
         height: 14.93vw;
@@ -2312,6 +2808,17 @@
       padding-left: 73px;
       padding-right: 60px;
       box-shadow: 0px 15px 22px rgba(252, 102, 82, 0.22);
+
+      @include test1 {
+        min-height: 5.4vw;
+        max-width: 24.73vw;
+        padding-left: 4.75vw;
+        padding-right: 3.9vw;
+
+        img {
+          width: 2.08vw;
+        }
+      }
 
       @include mMax {
         min-height: 14.93vw;
@@ -2355,7 +2862,12 @@
     max-height: 630px;
     flex-shrink: 0;
     margin-top: -45px;
-    margin-left: -33px;
+    margin-right: 33px;
+
+    @include test1 {
+      margin-top: -2.92vw;
+      margin-right: 8.14vw;
+    }
 
     @include mMax {
       display: none;
@@ -2422,6 +2934,12 @@
     color: #fc6652;
     text-shadow: 0px 4px 50px rgba(252, 102, 82, 0.53);
 
+    @include test1 {
+      margin-bottom: 2.53vw;
+      font-size: 3.25vw;
+      line-height: 2.73vw;
+    }
+
     @include mMax {
       margin-bottom: 4.26vw;
       font-size: 8.53vw;
@@ -2439,6 +2957,13 @@
       border-radius: 10px;
       background: linear-gradient(to right, #fc665200 0%, #fc6652 100%);
 
+      @include test1 {
+        right: calc(100% + 0.91vw);
+        width: 14.45vw;
+        height: 0.32vw;
+        border-radius: 0.65vw;
+      }
+
       @include mMax {
         width: 13.33vw;
         height: 0.8vw;
@@ -2453,6 +2978,12 @@
     right: 70px;
     max-width: 100%;
 
+    @include test1 {
+      top: 13.02vw;
+      right: 4.55vw;
+      width: 31.31vw;
+    }
+
     @include mMax {
       width: 68vw;
       right: 0;
@@ -2463,6 +2994,10 @@
 
 .how_block {
   padding-bottom: 79px;
+
+  @include test1 {
+    padding-bottom: 5.14vw;
+  }
 
   @include mMax {
     padding-bottom: 8.53vw;
@@ -2475,6 +3010,12 @@
     font-size: 40px;
     line-height: 48px;
     color: #ffffff;
+
+    @include test1 {
+      margin-bottom: 4.16vw;
+      font-size: 2.6vw;
+      line-height: 3.125vw;
+    }
 
     @include mMax {
       font-size: 6.4vw;
@@ -2499,6 +3040,10 @@
     box-sizing: border-box;
     padding: 41px 0 24px;
 
+    @include test1 {
+      padding: 2.66vw 0 1.56vw;
+    }
+
     @include mMax {
       padding: 0;
       width: 100%;
@@ -2517,6 +3062,10 @@
       span {
         margin-left: auto;
         margin-right: 5px;
+
+        @include test1 {
+          margin-right: 0.32vw;
+        }
       }
     }
 
@@ -2526,6 +3075,10 @@
       padding: 0 20px 55px 20px;
       height: 100%;
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+
+      @include test1 {
+        padding: 0 1.3vw 3.58vw 01.3vw;
+      }
 
       @include mMax {
         padding: 3.46vw 4vw 5.6vw;
@@ -2545,6 +3098,15 @@
         color: #ffffff;
         background: #fc6652;
 
+        @include test1 {
+          margin-bottom: 2.08vw;
+          margin-left: 0.32vw;
+          width: 2.86vw;
+          height: 2.86vw;
+          font-size: 1.43vw;
+          line-height: 1.95vw;
+        }
+
         @include mMax {
           position: absolute;
           top: 0;
@@ -2561,6 +3123,12 @@
         font-size: 24px;
         line-height: 32px;
         color: #494947;
+
+        @include test1 {
+          margin-bottom: 3.125vw;
+          font-size: 1.56vw;
+          line-height: 2.08vw;
+        }
 
         @include mMax {
           font-size: 4.26vw;
@@ -2579,6 +3147,12 @@
         line-height: 24px;
         color: #171716;
 
+        @include test1 {
+          padding-left: 1.69vw;
+          font-size: 1.17vw;
+          line-height: 1.56vw;
+        }
+
         b {
           font-weight: 500;
         }
@@ -2591,6 +3165,10 @@
 
         & + p {
           margin-top: 40px;
+
+          @include test1 {
+            margin-top: 2.6vw;
+          }
 
           @include mMax {
             margin-top: 4.26vw;
@@ -2609,8 +3187,19 @@
           height: 15px;
           background: center / auto url(../img/how_play.svg) no-repeat;
 
+          @include test1 {
+            width: 0.84vw;
+            height: 0.97vw;
+            margin-top: 0.32vw;
+            margin-right: 0.65vw;
+            background-size: cover;
+          }
+
           @include mMax {
+            width: 3.46vw;
+            height: 4vw;
             margin-top: 0.53vw;
+            background-size: cover;
           }
         }
       }
@@ -2622,6 +3211,10 @@
       height: 100%;
       background: #fc6652;
       box-shadow: 0px 0px 50px rgba(252, 102, 82, 0.6);
+
+      @include test1 {
+        padding: 0 1.95vw 1.69vw;
+      }
 
       @include mMax {
         position: relative;
@@ -2641,6 +3234,14 @@
         line-height: 32px;
         color: #fc6652;
 
+        @include test1 {
+          margin-bottom: 1.43vw;
+          width: 2.86vw;
+          height: 2.86vw;
+          font-size: 1.56vw;
+          line-height: 2.08vw;
+        }
+
         @include mMax {
           position: absolute;
           left: 0;
@@ -2659,6 +3260,12 @@
         color: #ffffff;
         margin-bottom: 38px;
 
+        @include test1 {
+          font-size: 1.56vw;
+          line-height: 2.08vw;
+          margin-bottom: 2.47vw;
+        }
+
         @include mMax {
           margin-bottom: 10.66vw;
           font-size: 4.26vw;
@@ -2676,6 +3283,14 @@
         line-height: 26px;
         text-align: center;
         color: #ffffff;
+
+        @include test1 {
+          margin: 0 auto;
+          margin-bottom: 3.125vw;
+          font-size: 1.17vw;
+          line-height: 1.69vw;
+          max-width: 22.13vw;
+        }
 
         b {
           font-weight: 500;
@@ -2704,12 +3319,13 @@
     flex-wrap: wrap;
     margin: 54px -11px -22px;
 
+    @include test1 {
+      margin: 3.51vw -0.71vw -1.43vw;
+    }
+
     @include mMax {
       justify-content: center;
-
-      @include mMax {
-        margin: 4.26vw -2.66vw 0;
-      }
+      margin: 4.26vw -2.66vw 0;
     }
 
     li {
@@ -2718,6 +3334,11 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 22px;
+
+      @include test1 {
+        margin: 0 0.71vw;
+        margin-bottom: 1.43vw;
+      }
 
       @include mMax {
         max-width: 24vw;
@@ -2735,6 +3356,12 @@
       border: 1px solid #cbcbcb;
       border-radius: 20px;
       transition: 0.2s;
+
+      @include test1 {
+        width: 6.51vw;
+        height: 6.51vw;
+        border-radius: 1.3vw;
+      }
 
       @include mMax {
         width: 24vw;
@@ -2762,6 +3389,10 @@
     li {
       margin: 0 22px;
 
+      @include test1 {
+        margin: 0 1.43vw;
+      }
+
       @include mMax {
         margin: 0 4.26vw;
       }
@@ -2786,6 +3417,12 @@
       border-radius: 20px;
       transition: 0.2s;
 
+      @include test1 {
+        width: 6.51vw;
+        height: 6.51vw;
+        border-radius: 1.3vw;
+      }
+
       @include mMax {
         width: 24vw;
         height: 24vw;
@@ -2807,6 +3444,10 @@
   &-btn_wrap {
     margin-top: 40px;
 
+    @include test1 {
+      margin-top: 2.6vw;
+    }
+
     @include mMax {
       margin-top: 8.53vw;
     }
@@ -2827,6 +3468,18 @@
       background: #ffffff;
       border-radius: 84px;
       transition: 0.2s;
+
+      @include test1 {
+        min-height: 5.01vw;
+        padding: 0 1.3vw 0 5.72vw;
+        font-size: 1.56vw;
+        line-height: 1.43vw;
+        border-radius: 5.46vw;
+
+        img {
+          width: 3.125vw;
+        }
+      }
 
       @include mMax {
         min-height: 14.93vw;

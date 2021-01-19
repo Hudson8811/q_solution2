@@ -7,6 +7,10 @@
   width: 100%;
   padding: 28px 0;
 
+  @include test1 {
+    padding: 1.82vw 0;
+  }
+
   @include mMax {
     padding: 5.86vw 0;
   }
@@ -33,6 +37,10 @@
       display: block;
       width: 31px;
 
+      @include test1 {
+        width: 2.018vw;
+      }
+
       @include mMax {
         width: 5.86vw;
       }
@@ -45,6 +53,12 @@
       font-size: 26px;
       line-height: 32px;
       color: #fff;
+
+      @include test1 {
+        margin-left: 0.52vw;
+        font-size: 1.69vw;
+        line-height: 2.08vw;
+      }
 
       @include mMax {
         margin-left: 1.33vw;
@@ -65,6 +79,12 @@
     color: #ffffff;
     text-decoration: none;
     transition: 0.2s;
+
+    @include test1 {
+      width: 4.29vw;
+      font-size: 1.17vw;
+      line-height: 1.69vw;
+    }
 
     &:hover {
       color: #fc6652;
@@ -87,6 +107,14 @@
     border-radius: 20px;
     margin-right: 21px;
     transition: 0.2s;
+
+    @include test1 {
+      width: 10.67vw;
+      height: 2.47vw;
+      border: 1px solid #fc6652;
+      border-radius: 1.3vw;
+      margin-right: 1.36vw;
+    }
 
     &:hover {
       color: #fff;

@@ -44,6 +44,10 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 
+  // @include test1 {
+  //   width: calc(100% - 4.16vw);
+  // }
+
   @include mMax {
     width: calc(100% - 8.53vw);
   }
@@ -75,10 +79,26 @@ body {
   transition: 0.2s;
   border: 2px solid #fc6652;
 
+  @include test1 {
+    height: 4.68vw;
+    padding: 1.56vw 2.27vw 1.56vw 3.125vw;
+    font-size: 1.17vw;
+    line-height: 1.69vw;
+    border-width: 0.13vw;
+
+    svg {
+      width: 1.04vw;
+    }
+  }
+
   span {
     display: block;
     margin-right: auto;
     padding-right: 5px;
+
+    @include test1 {
+      margin-right: 0.32vw;
+    }
   }
 
   path {
@@ -114,10 +134,26 @@ body {
   border-radius: 100px;
   transition: 0.2s;
 
+  @include test1 {
+    font-size: 1.17vw;
+    line-height: 1.69vw;
+    border-width: 0.13vw;
+    height: 4.68vw;
+    padding: 1.56vw 2.53vw 1.56vw 3.9vw;
+
+    img {
+      width: 1.69vw;
+    }
+  }
+
   span {
     display: block;
     margin-right: auto;
     padding-right: 5px;
+
+    @include test1 {
+      margin-right: 0.32vw;
+    }
   }
 
   path {
