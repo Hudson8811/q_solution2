@@ -117,7 +117,7 @@
       position: absolute;
       display: block;
       opacity: 0;
-      transition-duration: 0.2s;
+      transition: transform 0.2s linear, opacity 0.2s linear;
 
       &.is-active {
         opacity: 1;
@@ -128,7 +128,8 @@
         width: 35vw;
         max-width: 538px;
         z-index: 0;
-        transition-delay: 0.3s;
+        transition-delay: 0.3s, 0s;
+        transition-property: transform, opacity;
 
         @include dMax {
           top: -61px;
@@ -147,7 +148,8 @@
         width: 19.9vw;
         max-width: 306px;
         z-index: 3;
-        transition-delay: 0.5s;
+        transition-delay: 0.5s, 0s;
+        transition-property: transform, opacity;
 
         @include mMax {
           width: 33vw;
@@ -167,7 +169,8 @@
         width: 8.46vw;
         max-width: 130px;
         z-index: 4;
-        transition-delay: 0.6s;
+        transition-delay: 0.6s, 0s;
+        transition-property: transform, opacity;
 
         @include mMax {
           width: 13.86vw;
@@ -189,7 +192,8 @@
         width: 32.5vw;
         max-width: 500px;
         z-index: 2;
-        transition-delay: 0.4s;
+        transition-delay: 0.4s, 0s;
+        transition-property: transform, opacity;
 
         @include mMax {
           width: 53.13vw;
@@ -208,18 +212,15 @@
       @include dMin {
         & > img.main_section-banner_img {
           &:nth-child(3) {
-            margin-top: -20px;
-            margin-right: -20px;
+            transform: translate(20px, -20px);
           }
 
           &:nth-child(2) {
-            margin-right: -20px;
-            margin-bottom: -20px;
+            transform: translate(20px, 20px);
           }
 
           &:nth-child(4) {
-            margin-top: -20px;
-            margin-left: -20px;
+            transform: translate(-20px, -20px);
           }
         }
       }
@@ -2248,6 +2249,7 @@
     &-img {
       position: absolute;
       display: block;
+      transition: opacity 0.2s linear;
 
       &1 {
         width: 25.13vw;
@@ -2621,6 +2623,7 @@
     &_img {
       position: absolute;
       display: block;
+      transition: transform 0.2s linear;
 
       &1 {
         left: 2.5vw;
@@ -2628,7 +2631,6 @@
         z-index: 2;
         width: 24.5vw;
         max-width: 376px;
-        transition: 0.2s;
 
         @include dMax {
           left: 39px;
@@ -2642,7 +2644,6 @@
         z-index: 3;
         width: 10.45vw;
         max-width: 161px;
-        transition: 0.2s;
 
         @include dMax {
           top: -46px;
@@ -2667,23 +2668,11 @@
 
     &:hover {
       .exclusive-mac_img1 {
-        margin-top: -0.65vw;
-        margin-right: -0.65vw;
-
-        @include dMax {
-          margin-top: -10px;
-          margin-right: -10px;
-        }
+        transform: translate(10px, -10px);
       }
 
       .exclusive-mac_img2 {
-        margin-top: -1.3vw;
-        margin-right: -1.3vw;
-
-        @include dMax {
-          margin-top: -20px;
-          margin-right: -20px;
-        }
+        transform: translate(20px, -20px);
       }
     }
   }
@@ -2843,7 +2832,6 @@
 
   &-mobile_steps {
     display: none;
-
     @include mMax {
       display: block;
       width: 100%;
@@ -2880,6 +2868,7 @@
   &-img {
     position: absolute;
     display: block;
+    transition: opacity 0.2s linear;
 
     &-1 {
       width: 13.8vw;

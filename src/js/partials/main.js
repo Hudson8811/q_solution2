@@ -1,7 +1,7 @@
 $(document).ready(function () {
     setTimeout(() => {
         $('.main_section-banner_img').addClass('is-active');
-    },1000);
+    },300);
     
 
     var $page = $('html, body');

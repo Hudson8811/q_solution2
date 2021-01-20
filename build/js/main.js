@@ -12,7 +12,7 @@ var Revealator="undefined"!=typeof Revealator?Revealator:{};$(function(){Reveala
 $(document).ready(function () {
     setTimeout(() => {
         $('.main_section-banner_img').addClass('is-active');
-    },1000);
+    },300);
     
 
     var $page = $('html, body');
